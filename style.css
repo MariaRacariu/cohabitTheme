@@ -11,3 +11,7 @@ License: GNU General Public License v2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cohabit
 */
+
+body {
+    background-color: rgb(155, 155, 155);
+}
