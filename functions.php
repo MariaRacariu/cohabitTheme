@@ -12,29 +12,40 @@ function cohabit_theme_support(){
     add_theme_support('automatic-feed-links');
     add_theme_support('custom-logo');
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption', 'style', 'script' ) );
+    add_theme_support('menus');
 }
 add_action('after_setup_theme', 'cohabit_theme_support');
 
-function create_custom_post_types(){
-    // Custom Post Types Options for frontpage
-    register_post_type('cohabit-frontpage',
-        array(
-            'labels' => array(
-                'name' => __( 'Homepage' ),
-                'singular_name' => __( 'Homepage' )
-            ),
-            'public' => true,
-            'has_archive' => false,
-            'show_in_rest' => true,
-            'hierarchical' => true,
-            'supports' => array(
-                'title',
-                'editor',
-                'thumbnail',
-                'custom-fields'
-            ))
-    );
-}
+// function create_custom_post_types(){
+//     // Custom Post Types Options for frontpage
+//     register_post_type('cohabit-frontpage',
+//         array(
+//             'labels' => array(
+//                 'name' => __( 'Homepage' ),
+//                 'singular_name' => __( 'Homepage' )
+//             ),
+//             'public' => true,
+//             'has_archive' => false,
+//             'show_in_rest' => true,
+//             'hierarchical' => true,
+//             'supports' => array(
+//                 'title',
+//                 'editor',
+//                 'thumbnail',
+//                 'custom-fields'
+//             ))
+//     );
+// }
 
-add_action( 'init', 'create_custom_post_types');
+// add_action( 'init', 'create_custom_post_types');
+
+//Navigation
+function menus(){
+    register_nav_menus (array(
+        'primary menu' => 'Desktop Primary Menu',
+        'footer menu' => 'Footer Menu',
+    ));
+}
+//Hooking up the function to init
+add_action('init', 'menus');
 ?>
