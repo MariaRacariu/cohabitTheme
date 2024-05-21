@@ -12,6 +12,238 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cohabit
 */
 
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Body */
+* {
+    color: #1E1E1E;
+    font-family: 'Raleway', sans-serif;
+}
+
 body {
-    background-color: rgb(155, 155, 155);
+    background-color: #F7F9F7;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+/* Navigation */
+.cohabitMobileMenuIconContainer,
+.cohabitMenuCloseIcon {
+    display: none;
+}
+
+.cohabitNavigationContainer {
+    width: 100%;
+}
+
+.cohabitContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.cohabitLogoContainer>img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
+
+.cohabitNavigationOptionsContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.cohabitNavigationOptionsContainer>li,
+.cohabitFooterNavContainer>li {
+    list-style-type: none;
+}
+
+.cohabitNavigationOptionsContainer>li>a,
+.cohabitFooterNavContainer>li>a {
+    color: #1E1E1E;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: large;
+}
+
+.cohabitNavigationOptionsContainer>li>a:visited,
+.cohabitFooterNavContainer>li>a:visited {
+    color: #1E1E1E;
+}
+
+.cohabitNavigationOptionsContainer>li>a:hover,
+.cohabitFooterNavContainer>li>a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+.heroHeading {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.highlight {
+    color: #DFB447;
+}
+
+.heroText {
+    font-size: x-large;
+    font-weight: 500;
+    margin: 10px 10px 10px 10px;
+}
+
+.heroButtonContainer {
+    margin-top: 20px;
+}
+
+.heroButton {
+    text-decoration: none;
+    background-color: #63C2C9;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    font-size: larger;
+    font-weight: 400;
+}
+
+/* Steps Info */
+.frontPageInfoContainer {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* Slider Steps info */
+
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+/* Footer */
+.footerContainer {
+    background-color: #63C2C9;
+    /* position: fixed;
+    bottom: 0; */
+    width: 100%;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cohabitFooterNavContainer {
+    padding-left: 0px;
+}
+
+.cohabitFooterNavContainer>li {
+    padding-bottom: 10px;
+}
+
+.footerHighlightText {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footerIconsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerIcons {
+    width: 50px;
+    height: auto;
+}
+
+/* Smaller than 900px */
+@media only screen and (max-width: 900px) {
+
+    /* Mobile Nav */
+    .cohabitNavigationOptionsContainer {
+        display: none;
+        text-align: center;
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .cohabitNavigationOptionsContainer>li {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    .cohabitNavigationOptionsContainer>li>a {
+        font-size: 24px;
+        display: block;
+        width: 100%;
+    }
+
+    .cohabitMobileMenuIconContainer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .cohabitMenuIcon:hover,
+    .cohabitMenuCloseIcon:hover {
+        cursor: pointer;
+    }
+
+    .cohabitMenuCloseIcon {
+        margin-top: 30px;
+        margin-right: 20px;
+        width: 40px;
+        height: auto;
+    }
+
+    .menuContainer {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footerContainer {
+        flex-direction: column-reverse;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    #slider {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #default-content {
+        display: none;
+    }
 }

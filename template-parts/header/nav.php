@@ -1,20 +1,23 @@
-<nav>
-    <div>
-        <div><img src="" alt=""></div>
-        <div><img src="" alt=""></div>
-        <div>
-            <ul>
+<nav class="cohabitNavigationContainer" id="cohabitNavigationContainer">
+    <div class="cohabitContainer" id="cohabitContainer">
+        <div class="cohabitLogoContainer" id="cohabitLogoContainer">
+            <?php the_post_thumbnail(); ?>
+        </div>
+        <!-- Need to add ACF to call the mobile menu icon -->
+        <div class="menuContainer">
             <?php
                 wp_nav_menu(
                     array(
                         'menu'=>'Desktop Primary Menu',
-                        'container'=>'',
-                        'theme_location'=> 'style.css',
-                        'items_wrap'=>'<li>%3$s</li>',
+                        'menu_class'=>'cohabitNavigationOptionsContainer',
+                        'menu_id'=>'cohabitNavigationOptionsContainer',
                     )
                 )
             ?>
-        </ul>
+        </div>
+        <div class="cohabitMobileMenuIconContainer">
+            <img src="<?php echo get_theme_file_uri( 'assets/images/menuIcon.svg' ); ?>" alt="Three lines to indicate a mobile menu" class="cohabitMenuIcon" id="cohabitMenuIcon">
+            <img src="<?php echo get_theme_file_uri( 'assets/images/menuCloseIcon.svg' ); ?>" alt="An X to indicate to close the mobile menu" class="cohabitMenuCloseIcon" id="cohabitMenuCloseIcon">
         </div>
     </div>
 </nav>

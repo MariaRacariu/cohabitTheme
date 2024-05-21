@@ -16,29 +16,6 @@ function cohabit_theme_support(){
 }
 add_action('after_setup_theme', 'cohabit_theme_support');
 
-// function create_custom_post_types(){
-//     // Custom Post Types Options for frontpage
-//     register_post_type('cohabit-frontpage',
-//         array(
-//             'labels' => array(
-//                 'name' => __( 'Homepage' ),
-//                 'singular_name' => __( 'Homepage' )
-//             ),
-//             'public' => true,
-//             'has_archive' => false,
-//             'show_in_rest' => true,
-//             'hierarchical' => true,
-//             'supports' => array(
-//                 'title',
-//                 'editor',
-//                 'thumbnail',
-//                 'custom-fields'
-//             ))
-//     );
-// }
-
-// add_action( 'init', 'create_custom_post_types');
-
 //Navigation
 function menus(){
     register_nav_menus (array(
@@ -47,5 +24,5 @@ function menus(){
     ));
 }
 //Hooking up the function to init
-add_action('init', 'menus');
+add_action('after_setup_theme', 'menus');
 ?>
