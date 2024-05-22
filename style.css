@@ -113,7 +113,7 @@ body {
     text-decoration: none;
     background-color: #63C2C9;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     padding: 10px 15px 10px 15px;
     font-size: larger;
     font-weight: 400;
@@ -139,10 +139,65 @@ body {
 .slides {
     display: flex;
     transition: transform 0.5s ease-in;
+    height: 315px;
 }
 
 .slide {
     flex: 0 0 100%;
+}
+
+/* Moving Info */
+
+.movingInfoShadow {
+    margin: 50px 0px 50px 0px;
+    box-shadow: 10px 4px 40px #aeaeae;
+}
+
+.movingInfoContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movingInfoTextContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.movingInfoHeading {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.movingInfoParagraph {
+    max-width: 600px;
+    font-size: large;
+    line-height: 1.5;
+}
+
+.movingInfoButtonContainer {
+    padding-top: 20px;
+}
+
+.movingInfoButton {
+    text-decoration: none;
+    border: solid #1E1E1E 2px;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.movingInfoImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo Slider */
+.logoSliderContainer {
+    height: 200px;
 }
 
 /* Footer */
@@ -225,6 +280,22 @@ body {
 
     .menuContainer {
         width: 100%;
+    }
+
+    /* Moving Info */
+    .movingInfoContainer {
+        flex-direction: column;
+    }
+
+    .movingInfoTextContainer {
+        width: auto;
+        padding: 0px 10px 30px 10px;
+    }
+
+    .movingInfoImageContainer {
+        display: contents;
+        max-width: 100px;
+        height: auto;
     }
 
     /* Footer */

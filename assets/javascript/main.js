@@ -109,4 +109,15 @@ if (window.innerWidth <= 1250) {
 }
 
 
+function slideSlider() {
+    $("#logosSliderTrack").css({ "left": "0%", "transition": "all 0s linear" });
+    $("#logosSliderTrack").css({ "left": String(parseInt($("#logosSliderTrack").css("left")) - 500) + "px", "transition": "all 5s linear" });
+    setTimeout(function () { moveSliderItem() }, 2635);
+}
 
+function moveSliderItem() {
+    $("#logosSliderTrack div").first().detach().appendTo($("#logosSliderTrack"));
+    slideSlider();
+}
+
+slideSlider();
