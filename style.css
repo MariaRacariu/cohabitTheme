@@ -149,7 +149,7 @@ body {
 /* Moving Info */
 
 .movingInfoShadow {
-    margin: 50px 0px 50px 0px;
+    margin: 100px 0px 50px 0px;
     box-shadow: 10px 4px 40px #aeaeae;
 }
 
@@ -195,9 +195,94 @@ body {
     align-items: center;
 }
 
+/* Customer Reviews */
+
+.customerReviewsContainer {
+    padding: 50px 0px 100px 0px;
+    margin: 0px 100px 0px 100px;
+}
+
+.customerReviewsTitle {
+    font-size: 35px;
+}
+
+.customerReviewsPostsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.customerReviewPost {
+    box-shadow: 10px 4px 40px #aeaeae;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.customerReviewsImage {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+
+.customerReviewsInfoContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.customerReviewsNameInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px 0px 10px;
+}
+
+.customerReviewTitle {
+    margin: 0px;
+    font-weight: 500;
+}
+
+.customerReviewLocation {
+    margin: 0px;
+    color: #676767;
+}
+
+.customerReviewImageContainer {
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.customerReviewContent {
+    font-size: 20px;
+    text-align: center;
+}
+
+.customerReviewButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.customerReviewReadMoreButton {
+    text-decoration: none;
+    border: solid #1E1E1E 1px;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    font-size: larger;
+    font-weight: 400;
+}
+
+.customerReviewHeightContainer {
+    min-height: 270px;
+    max-height: 350px;
+}
+
 /* Logo Slider */
-.logoSliderContainer {
-    height: 200px;
+.logosSliderTrack {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 /* Footer */
@@ -209,8 +294,9 @@ body {
 }
 
 .footerContainer {
+    margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
