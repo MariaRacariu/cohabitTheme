@@ -1,7 +1,9 @@
 <nav class="cohabitNavigationContainer" id="cohabitNavigationContainer">
     <div class="cohabitContainer" id="cohabitContainer">
         <div class="cohabitLogoContainer" id="cohabitLogoContainer">
-            <img src="<?php echo get_theme_file_uri( 'assets/images/cohabitLogo.png' ); ?>" alt="">
+            <a href="http://mariaracariu.se/cohabit">
+                <img src="<?php echo get_theme_file_uri( 'assets/images/cohabitLogo.png' ); ?>" alt="">
+            </a>
         </div>
         <!-- Need to add ACF to call the mobile menu icon -->
         <div class="menuContainer">

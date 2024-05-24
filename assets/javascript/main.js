@@ -3,6 +3,7 @@ const menuIconClose = document.querySelector("#cohabitMenuCloseIcon");
 const navOptionsContainer = document.querySelector("#cohabitNavigationOptionsContainer");
 const cohabitLogo = document.querySelector("#cohabitLogoContainer");
 const navFlexContainer = document.querySelector("#cohabitContainer");
+const bodyElement = document.body;
 
 menuIconOpen.addEventListener("click", function () {
     console.log("Menu Open");
@@ -17,6 +18,9 @@ menuIconOpen.addEventListener("click", function () {
     navFlexContainer.style.flexDirection = "column-reverse";
     navFlexContainer.style.position = "fixed";
     navFlexContainer.style.margin = "0";
+
+    bodyElement.style.height = "100%";
+    bodyElement.style.overflow = "hidden";
 
     navOptionsContainer.style.display = "block";
 
@@ -36,6 +40,9 @@ menuIconClose.addEventListener("click", function () {
     navFlexContainer.style.flexDirection = "";
     navFlexContainer.style.position = "";
     navFlexContainer.style.margin = "";
+
+    bodyElement.style.height = "";
+    bodyElement.style.overflow = "";
 
     navOptionsContainer.style.display = "";
 
@@ -68,19 +75,19 @@ function autoSlide() {
     nextSlide();
 }
 
-setInterval(autoSlide, 2000); // 3 seconds
+setInterval(autoSlide, 1000); // 4 seconds
 
 // Check Window Size
 if (window.innerWidth <= 1250) {
     // Mobile
-    document.getElementById('slider').style.display = 'block';
+    document.getElementById('slider').style.display = 'flex';
     document.getElementById('defaultContent').style.display = 'none';
 
     window.addEventListener('resize', function () {
         // Check window width and toggle slider visibility
         if (window.innerWidth <= 1250) {
             // Mobile
-            document.getElementById('slider').style.display = 'block';
+            document.getElementById('slider').style.display = 'flex';
             document.getElementById('defaultContent').style.display = 'none';
         } else {
             // Desktop
@@ -98,7 +105,7 @@ if (window.innerWidth <= 1250) {
         // Check window width and toggle slider visibility
         if (window.innerWidth <= 1250) {
             // Mobile
-            document.getElementById('slider').style.display = 'block';
+            document.getElementById('slider').style.display = 'flex';
             document.getElementById('defaultContent').style.display = 'none';
         } else {
             // Desktop
