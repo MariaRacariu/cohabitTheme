@@ -199,7 +199,13 @@ body {
 
 .customerReviewsContainer {
     padding: 50px 0px 100px 0px;
-    margin: 0px 100px 0px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.customerReviewsRule {
+    max-width: 1500px;
+    min-width: fit-content;
 }
 
 .customerReviewsTitle {
@@ -208,8 +214,9 @@ body {
 
 .customerReviewsPostsContainer {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    justify-content: center;
 }
 
 .customerReviewPost {
@@ -283,6 +290,10 @@ body {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+}
+
+.logoSlide>img {
+    max-width: 200px;
 }
 
 /* Footer */
@@ -384,6 +395,8 @@ body {
         height: auto;
     }
 
+
+
     /* Footer */
     .footerContainer {
         flex-direction: column-reverse;
@@ -402,5 +415,13 @@ body {
 
     #default-content {
         display: none;
+    }
+}
+
+@media screen and (max-width: 1416px) {
+
+    /* Customer Reviews */
+    .customerReviewsTitle {
+        text-align: center;
     }
 }

@@ -2,7 +2,11 @@
 // Enqueue all styles and scripts here
 function cohabit_enqueue_scripts(){
     wp_enqueue_style('stylesheet', get_stylesheet_uri(), [], filemtime(get_template_directory(). '/style.css'),'all');
+    // if(is_page_template('single-customer_reviews.php')){
+    //     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
+    // }
     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
+
 }
 add_action('wp_enqueue_scripts', 'cohabit_enqueue_scripts');
 
@@ -28,7 +32,7 @@ add_action('after_setup_theme', 'menus');
 
 // Post Type
 function create_custom_postTypes(){
-    register_post_type ('Customer_Reviews',
+    register_post_type ('customer_reviews',
     array(
         'labels' => array(
             'name' => __('Customer Reviews'),
