@@ -28,6 +28,10 @@ body {
     overflow: auto;
 }
 
+.boldPrice {
+    font-weight: 700;
+}
+
 /* Navigation */
 .cohabitMobileMenuIconContainer,
 .cohabitMenuCloseIcon {
@@ -285,6 +289,15 @@ body {
 }
 
 /* Logo Slider */
+.logoTitleContainer {
+    width: 100%;
+    text-align: center;
+}
+
+.logoTitle {
+    font-size: 35px;
+}
+
 .logosSliderTrack {
     display: flex;
     justify-content: center;
@@ -292,8 +305,16 @@ body {
     flex-wrap: wrap;
 }
 
-.logoSlide>img {
+.logosSlides {
+    text-align: center;
+}
+
+.defaultLogoSlide>img {
     max-width: 200px;
+}
+
+.logoSlide {
+    height: 120px;
 }
 
 /* Footer */
@@ -413,7 +434,20 @@ body {
         text-align: center;
     }
 
-    #default-content {
+    #defaultContent {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #logoSlider {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #logosDefaultContent {
         display: none;
     }
 }

@@ -7,7 +7,7 @@
     <div>
         <img src="<?php echo get_theme_file_uri( 'assets/images/FrontPageStepTwo.svg' ); ?>" alt="">
         <h2>Affordable</h2>
-        <p>Our pre-loved packages start at 299 sek/month</p>
+        <p>Our pre-loved packages start at <span class="boldPrice">299 sek/month</span></p>
     </div>
     <div>
         <img src="<?php echo get_theme_file_uri( 'assets/images/FrontPageStepThree.svg' ); ?>" alt="">
@@ -26,7 +26,7 @@
         <div class="slide">
             <img src="<?php echo get_theme_file_uri( 'assets/images/FrontPageStepTwo.svg' ); ?>" alt="">
             <h2>Affordable</h2>
-            <p>Our pre-loved packages start at 299 sek/month</p>
+            <p>Our pre-loved packages start at <span class="boldPrice">299 sek/month</span></p>
         </div>
         <div class="slide">
             <img src="<?php echo get_theme_file_uri( 'assets/images/FrontPageStepThree.svg' ); ?>" alt="">

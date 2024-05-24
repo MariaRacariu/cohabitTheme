@@ -6,7 +6,7 @@
         <p class="heroText">Your sustainable home away from home starts here.</p>
     </div>
     <div>
-        <p class="heroText">Rent pre-loved furniture from 299 sek/month.</p>
+        <p class="heroText">Rent pre-loved furniture from <span class="boldPrice">299 sek/month</span>.</p>
     </div>
     <div class="heroButtonContainer">
         <a class="heroButton" href="">Rent Here</a>
