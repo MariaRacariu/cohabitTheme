@@ -64,11 +64,12 @@ get_header();
 <div>
     <h2>FAQ</h2>
     <div>
-        <div>
+        <div class="faqSectionButton">
+            <button id="faqSectionButton">Rental duration</button>
             <h3>Rental duration</h3>
             <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.png' ); ?>" alt="">
         </div>
-        <div>
+        <div id="faqQAContainer">
             <div>
                 <h4>Why can’t I see or select the exact type of furniture I’ll receive?</h4>
                 <p>Our business is rooted in the principles of the circular economy, which means we source furniture from various pre-loved sources to give it a new life in your home or office. Because of this, the specific pieces we have in stock can vary greatly depending on what is available at any given time. While we cannot show you the exact type of furniture you will get, it will be similar to what is shown in the product images when you select the item.</p>

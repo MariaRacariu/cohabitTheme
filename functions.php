@@ -2,11 +2,16 @@
 // Enqueue all styles and scripts here
 function cohabit_enqueue_scripts(){
     wp_enqueue_style('stylesheet', get_stylesheet_uri(), [], filemtime(get_template_directory(). '/style.css'),'all');
-    // if(is_page_template('single-customer_reviews.php')){
-    //     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
-    // }
-    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
+    wp_register_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
+    wp_register_script('how-Cohabit-Works', get_template_directory_uri() . '/assets/javascript/howCohabitWorks.js', [], filemtime(get_template_directory(). '/assets/javascript/howCohabitWorks.js'), true);
 
+    if(is_page('Cohabit')){
+        wp_enqueue_script("main-js");
+    }
+
+    if(is_page('How Cohabit Works')){
+        wp_enqueue_script("how-Cohabit-Works");
+    }
 }
 add_action('wp_enqueue_scripts', 'cohabit_enqueue_scripts');
 
