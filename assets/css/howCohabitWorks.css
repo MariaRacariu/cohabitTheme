@@ -1,0 +1,65 @@
+/* How Cohabit Works */
+
+.introContainer {
+    text-align: center;
+}
+
+.introHeading {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.introHighlight {
+    color: #63C2C9;
+}
+
+.introImage {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+}
+
+.stepsContainer {
+    padding: 100px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stepTextContainer {
+    max-width: 600px;
+}
+
+.stepTextContainer>p {
+    line-height: 25px;
+}
+
+.stepImage {
+    margin-right: 50px;
+}
+
+.stepContainer {
+    display: flex;
+    margin: 50px 0px 50px 0px;
+}
+
+.howCohabitWorksLinks {
+    color: #63C2C9;
+    font-weight: 700;
+}
+
+.faqHeadingContainer {
+    background-color: #63C2C9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqHeadingContainer>img {
+    width: 30px;
+    height: 20px;
+}
+
+.faqQAContainer {
+    display: none;
+}

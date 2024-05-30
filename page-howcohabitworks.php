@@ -65,31 +65,48 @@ get_header();
     <h2>FAQ</h2>
     <div>
         <div class="faqSectionButton">
-            <button id="faqSectionButton">Rental duration</button>
-            <h3>Rental duration</h3>
-            <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.png' ); ?>" alt="">
+            <div class="faqHeadingContainer">
+                <h3>Furniture Selection</h3>
+                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
+            </div>
+            <div class="faqQAContainer">
+                <div>
+                    <h4>Why can’t I see or select the exact type of furniture I’ll receive?</h4>
+                    <p>Our business is rooted in the principles of the circular economy, which means we source furniture from various pre-loved sources to give it a new life in your home or office. Because of this, the specific pieces we have in stock can vary greatly depending on what is available at any given time. While we cannot show you the exact type of furniture you will get, it will be similar to what is shown in the product images when you select the item.</p>
+                    <p>You can check out blogs about our customer experiences <a href="https://cohabit.se/experiences-at-cohabit/">here.</a></p>
+                </div>
+                <div>
+                    <h4>What if I don’t like the furniture I receive?</h4>
+                    <p>Your satisfaction is our priority. If the piece you receive does not meet your expectations, we have a flexible return and exchange policy. </p>
+                </div>
+                <div>
+                    <h4>Returns/Exchange Policy:</h4>
+                    <ul>
+                        <li>All requests for exchange or return must be sent by email to hello@cohabit.se</li>
+                        <li>Requests for the exchange of furniture within 5 days from delivery will be charged 50% of the transport fee. (Refer to Table 1.2 for Transportation Classification).</li>
+                        <li>The exchange of furniture will be confirmed based on availability.</li>
+                        <li>Exchange/returns made outside the 5-day exchange window will be charged 100% of the transportation charges.</li>
+                        <li>A joint inspection is conducted with the rentee at the time of return to assess any damage to the items.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div id="faqQAContainer">
-            <div>
-                <h4>Why can’t I see or select the exact type of furniture I’ll receive?</h4>
-                <p>Our business is rooted in the principles of the circular economy, which means we source furniture from various pre-loved sources to give it a new life in your home or office. Because of this, the specific pieces we have in stock can vary greatly depending on what is available at any given time. While we cannot show you the exact type of furniture you will get, it will be similar to what is shown in the product images when you select the item.</p>
-                <p>You can check out blogs about our customer experiences <a href="https://cohabit.se/experiences-at-cohabit/">here.</a></p>
+
+    </div>
+    <div>
+        <div class="faqSectionButton">
+            <div class="faqHeadingContainer">
+                <h3>Rental duration</h3>
+                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
             </div>
-            <div>
-                <h4>What if I don’t like the furniture I receive?</h4>
-                <p>Your satisfaction is our priority. If the piece you receive does not meet your expectations, we have a flexible return and exchange policy. </p>
-            </div>
-            <div>
-                <h4>Returns/Exchange Policy:</h4>
-                <ul>
-                    <li>All requests for exchange or return must be sent by email to hello@cohabit.se</li>
-                    <li>Requests for the exchange of furniture within 5 days from delivery will be charged 50% of the transport fee. (Refer to Table 1.2 for Transportation Classification).</li>
-                    <li>The exchange of furniture will be confirmed based on availability.</li>
-                    <li>Exchange/returns made outside the 5-day exchange window will be charged 100% of the transportation charges.</li>
-                    <li>A joint inspection is conducted with the rentee at the time of return to assess any damage to the items.</li>
-                </ul>
+            <div class="faqQAContainer">
+                <div>
+                    <h4>Is there a minimum rental duration ?</h4>
+                    <p>The minimum rental period is 3 months. Items could be rented for a shorter duration, however the 3 month charges still apply.</p>
+                </div>
             </div>
         </div>
+        
     </div>
 </div>
 <?php
