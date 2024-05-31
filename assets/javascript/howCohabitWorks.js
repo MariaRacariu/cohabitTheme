@@ -14,4 +14,4 @@ faqSectionButtons.forEach(faqSectionButton => {
 
 
     });
-})
+});

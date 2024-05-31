@@ -1,0 +1,148 @@
+.faqHeadingContainer {
+    background-color: #63C2C9;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faqHeadingContainer {
+    padding: 5px 20px 5px 20px;
+}
+
+.faqHeadingContainer>h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.faqQAContainer {
+    display: none;
+    padding: 0px 20px 0px 20px;
+}
+
+.faqQAContainer>div>p {
+    line-height: 25px;
+}
+
+.aboutIntroImage {
+    width: 100%;
+    height: auto;
+}
+
+.introContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.introHeading {
+    font-size: 30px;
+}
+
+.linkArrowIcon {
+    max-width: 20px;
+    height: auto;
+}
+
+.linkButton {
+    background-color: #63C2C9;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 20px 15px 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.introWrapper {
+    max-width: 90%;
+    display: flex;
+}
+
+.faqAllContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.textIntroWrapper {
+    margin-bottom: 40px;
+}
+
+.introLinkButtonWrapper {
+    width: 100%;
+    text-align: end;
+}
+
+.leftWrapper {
+    padding-right: 30px;
+    max-width: 50%;
+}
+
+.imageContainer {
+    margin: auto;
+}
+
+.textIntroWrapper>p {
+    line-height: 25px;
+}
+
+.ourStoryImageContainer > img{
+    max-width: 500px;
+    height: auto;
+}
+
+.ourStoryWrapper{
+    display: flex;
+}
+
+.ourStoryTextContainer{
+    padding-right: 50px;
+    padding-left: 40px;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textUnderImageContainer{
+    text-align: center;
+}
+
+.ourStoryHeading{
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.ourStoryContainer{
+    margin: 100px 0px 50px 0px;
+    box-shadow: 10px 4px 40px #aeaeae;
+    padding: 20px 0px 20px 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .introWrapper {
+        flex-direction: column;
+    }
+
+    .leftWrapper {
+        max-width: 100%;
+        padding-right: 0%;
+        margin-bottom: 30px;
+    }
+
+    .ourStoryWrapper{
+        flex-direction: column;
+    }
+
+    .ourStoryImageContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ourStoryImageContainer > img{
+        width: 100%;
+    }
+}
