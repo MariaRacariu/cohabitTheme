@@ -53,14 +53,30 @@ get_header();
             </div>
         </div>
         <div class="imageContainer">
-            <img src="<?php echo get_theme_file_uri( 'assets/images/temp.png' ); ?>" alt="" class="aboutIntroImage">
+            <img src="<?php echo get_theme_file_uri( 'assets/images/temp.jpg' ); ?>" alt="" class="aboutIntroImage">
         </div>
     </div>
 </div>
 
-<div>
 
+
+<div class="reportContainer">
+    <div class="reportWrapper">
+        <div class="reportImageContainer">
+            <img src="<?php echo get_theme_file_uri( 'assets/images/report.webp' ); ?>" alt="">
+        </div>
+        <div class="reportTextContainer">
+            <h2>Cohabit AB 2023 Sustainability Report</h2>
+            <p>We are excited to share our 2023 Sustainability Report, which reflects our dedication towards sustainability and circularity in the furniture industry. As we continue to navigate the challenges ahead, we’re grateful to have you alongside us on this journey!</p>
+            <div class="reportLinks">
+                <a href="http://cohabit.se/wp-content/uploads/2024/05/Cohabit-Sustainability-Report-2023.pdf">Read now</a>
+                <a href="https://www.linkedin.com/posts/cohabit-se_cohabit-sustainability-report-2022-activity-7056266286011420672-7su3/?utm_source=share&utm_medium=member_ios">Cohabit Sustainability Report 2022</a>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 
 
 <div class="ourStoryContainer">

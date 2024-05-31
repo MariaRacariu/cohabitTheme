@@ -54,11 +54,11 @@
 }
 
 .faqHeadingContainer {
-    background-color: #63C2C9;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: #1E1E1E 2px solid;
 }
 
 .faqAllContainer {

@@ -1,9 +1,9 @@
 .faqHeadingContainer {
-    background-color: #63C2C9;
     border-radius: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: #1E1E1E 2px solid;
 }
 
 .faqHeadingContainer {
@@ -11,7 +11,7 @@
 }
 
 .faqHeadingContainer>h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -25,6 +25,7 @@
 }
 
 .aboutIntroImage {
+    max-width: 800px;
     width: 100%;
     height: auto;
 }
@@ -79,7 +80,11 @@
 }
 
 .imageContainer {
-    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
 }
 
 .textIntroWrapper>p {
@@ -119,6 +124,48 @@
     box-shadow: 10px 4px 40px #aeaeae;
     padding: 20px 0px 20px 0px;
 }
+.reportWrapper{
+    width: 90%;
+    display: flex;
+}
+.reportContainer{
+    margin: 100px 0px 100px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reportImageContainer > img{
+    max-width: 500px;
+    height: auto;
+}
+
+.reportTextContainer {
+    padding-left: 100px;
+}
+
+.reportTextContainer > h2 {
+    font-size: 30px;
+}
+
+.reportTextContainer > p {
+    max-width: 500px;
+    line-height: 25px;
+}
+.reportLinks{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.reportLinks > a{
+    text-decoration: none;
+  background-color: #63C2C9;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+  font-size: larger;
+  font-weight: 400;
+  max-width: fit-content;
+}
 
 @media only screen and (max-width: 1000px) {
     .introWrapper {
@@ -145,4 +192,13 @@
     .ourStoryImageContainer > img{
         width: 100%;
     }
+
+    .reportWrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .reportTextContainer {
+        padding-left: 0px;
+      }
 }
