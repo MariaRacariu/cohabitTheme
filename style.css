@@ -97,6 +97,7 @@ body {
 .heroHeading {
     font-size: 50px;
     font-weight: 800;
+    margin: 20px;
 }
 
 .highlight {
@@ -106,7 +107,7 @@ body {
 .heroText {
     font-size: x-large;
     font-weight: 500;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 20px;
 }
 
 .heroButtonContainer {
@@ -150,6 +151,10 @@ body {
     flex: 0 0 100%;
 }
 
+.slide > p{
+    margin: 0px 20px 0px 20px;
+}
+
 /* Moving Info */
 
 .movingInfoShadow {
@@ -172,12 +177,14 @@ body {
 .movingInfoHeading {
     font-size: 40px;
     font-weight: 600;
+    margin: 20px;
 }
 
 .movingInfoParagraph {
     max-width: 600px;
     font-size: large;
     line-height: 1.5;
+    margin: 20px;
 }
 
 .movingInfoButtonContainer {
@@ -191,6 +198,7 @@ body {
     padding: 10px 15px 10px 15px;
     font-size: larger;
     font-weight: 500;
+    margin: 20px;
 }
 
 .movingInfoImageContainer {
@@ -214,6 +222,7 @@ body {
 
 .customerReviewsTitle {
     font-size: 35px;
+    margin: 20px;
 }
 
 .customerReviewsPostsContainer {
@@ -296,6 +305,7 @@ body {
 
 .logoTitle {
     font-size: 35px;
+    margin: 20px;
 }
 
 .logosSliderTrack {
