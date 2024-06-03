@@ -1,20 +1,25 @@
 <?php
 // Enqueue all styles and scripts here
 function cohabit_enqueue_scripts(){
+    wp_deregister_script('jquery');
     // Register Styles
     wp_register_style('howCohabitWorksStylesheet', get_template_directory_uri(). '/assets/css/howCohabitWorks.css', array('stylesheet'), 'all');
-    wp_register_style('aboutPageStylesheet', get_template_directory_uri(). '/assets/css/about.css', array('stylesheet'), 'all');
+    wp_register_style('aboutPageStylesheet', get_template_directory_uri(). '/assets/css/about.css', array('slickStylesheet'), 'all');
+    wp_register_style ('slickStylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css', '1.8.1', array('aboutPageStylesheet'), 'all');
+    wp_register_style ('slickStylesheetTheme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css', '1.8.1', array('aboutPageStylesheet'), 'all');
 
     //Register Scripts
     wp_register_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
     wp_register_script('how-Cohabit-Works', get_template_directory_uri() . '/assets/javascript/howCohabitWorks.js', [], filemtime(get_template_directory(). '/assets/javascript/howCohabitWorks.js'), true);
     wp_register_script('aboutJS', get_template_directory_uri() . '/assets/javascript/about.js', [], filemtime(get_template_directory(). '/assets/javascript/about.js'), true);
+    wp_register_script('slickJS', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('aboutJS'), '1.8.1', true);
 
     // Enqueue Styles
     wp_enqueue_style('stylesheet', get_stylesheet_uri(), [], filemtime(get_template_directory(). '/style.css'),'all');
 
     // Enqueue Scripts
     wp_enqueue_script('navigation', get_template_directory_uri() . '/assets/javascript/navigation.js', [], filemtime(get_template_directory(). '/assets/javascript/navigation.js'), true);
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.slim.js', '3.7.1', array('aboutJS'), true);
 
     // Enqueue Registered Scripts and Styles
     if(is_page('Cohabit')){
@@ -26,9 +31,12 @@ function cohabit_enqueue_scripts(){
         wp_enqueue_style('howCohabitWorksStylesheet');
     }
 
-    if(is_page('About')){
-        wp_enqueue_script('aboutJS');
+    if(is_page('About')){        
         wp_enqueue_style('aboutPageStylesheet');
+        wp_enqueue_style('slickStylesheet');
+        wp_enqueue_style('slickStylesheetTheme');
+        wp_enqueue_script('slickJS');
+        wp_enqueue_script('aboutJS');
     }
 }
 add_action('wp_enqueue_scripts', 'cohabit_enqueue_scripts');

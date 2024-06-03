@@ -202,3 +202,10 @@
         padding-left: 0px;
       }
 }
+
+
+/* Testing */
+.testImage{
+    max-width: 500px;
+    height: auto;
+}
