@@ -9,9 +9,9 @@
             'post_type' => 'customer_reviews',
             'posts_per_page' => 3,
             'tax_query' => array(
-                'taxonomy' => 'customer_reviews',
+                'taxonomy' => 'Customer Categories',
                 'field' => 'slug',
-                'terms' => 'customerreview',
+                'terms' => 'stories',
             ),
         ]);
         ?>

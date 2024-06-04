@@ -70,7 +70,7 @@ get_header();
             <p>We are excited to share our 2023 Sustainability Report, which reflects our dedication towards sustainability and circularity in the furniture industry. As we continue to navigate the challenges ahead, we’re grateful to have you alongside us on this journey!</p>
             <div class="reportLinks">
                 <a href="http://cohabit.se/wp-content/uploads/2024/05/Cohabit-Sustainability-Report-2023.pdf">Read now</a>
-                <a href="https://www.linkedin.com/posts/cohabit-se_cohabit-sustainability-report-2022-activity-7056266286011420672-7su3/?utm_source=share&utm_medium=member_ios">Cohabit Sustainability Report 2022</a>
+                <a href="https://www.linkedin.com/posts/cohabit-se_cohabit-sustainability-report-2022-activity-7056266286011420672-7su3/?utm_source=share&utm_medium=member_ios">2022 Cohabit Sustainability Report</a>
             </div>
         </div>
     </div>

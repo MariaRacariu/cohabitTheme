@@ -5,6 +5,7 @@ function cohabit_enqueue_scripts(){
     wp_register_style('howCohabitWorksStylesheet', get_template_directory_uri(). '/assets/css/howCohabitWorks.css', array('stylesheet'), 'all');
     wp_register_style('aboutPageStylesheet', get_template_directory_uri(). '/assets/css/about.css', array('stylesheet'), 'all');
     wp_register_style('singlePage', get_template_directory_uri(). '/assets/css/singlePost.css', 'all');
+    wp_register_style('archive', get_template_directory_uri(). '/assets/css/archive.css', 'all');
 
     //Register Scripts
     wp_register_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
@@ -35,6 +36,10 @@ function cohabit_enqueue_scripts(){
     if(is_single()){
         wp_enqueue_style('singlePage');
     }
+
+    if(is_archive()){
+        wp_enqueue_style('archive');
+    }
 }
 add_action('wp_enqueue_scripts', 'cohabit_enqueue_scripts');
 
@@ -61,25 +66,25 @@ add_action('after_setup_theme', 'menus');
 // Post Type
 function create_custom_postTypes(){
     register_post_type ('customer_reviews',
-    array(
-        'labels' => array(
-            'name' => __('Customer Reviews'),
-            'singular_name' => __('Customer Review'),
-        ),
-        'public' => true,
-        'has_archive' => true,
-        'show_in_rest' => true,
-        'hierarchical' => true,
-        'supports' => array(
-            'title',
-            'editor',
-            'author',
-            'excerpt',
-            'thumbnail',
-            'custom-fields',
+        array(
+            'labels' => array(
+                'name' => __('Customers Section'),
+                'singular_name' => __('Customer Section'),
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'show_in_rest' => true,
+            'hierarchical' => true,
+            'supports' => array(
+                'title',
+                'editor',
+                'author',
+                'excerpt',
+                'thumbnail',
+                'custom-fields',
+            )
         )
-    )
-);
+    );
 }
 add_action('init', 'create_custom_postTypes');
 
@@ -88,7 +93,7 @@ function register_custom_taxonomy(){
     // Taxonomy for Customer Reviews
     $args = array(
         'labels' => array(
-            'name' => _x('Customer Reviews', 'Customer Reviews'),
+            'name' => _x('Customer Categories', 'Customer Categories'),
         ),
         'hierarchical' => true,
         'show_ui' => true,
@@ -96,7 +101,7 @@ function register_custom_taxonomy(){
         'query_var' => true,
         'show_in_rest' => true,
     );
-    register_taxonomy('customer_reviews', 'cohabit_Customer_Reviews', $args);
+    register_taxonomy('Customer Categories', 'customer_reviews', $args);
 }
 add_action('init', 'register_custom_taxonomy');
 ?>

@@ -1,7 +1,7 @@
 
     <div class="frontPageInfoContainer" id="defaultContent">
         <div>
-            <img src="<?php echo get_theme_file_uri( 'assets/images/FrontPageStepOne.svg' ); ?>" alt="">
+            <img src="<?php echo get_theme_file_uri( 'assets/images/FrontPageStepOne.png' ); ?>" alt="">
             <h2>Convenient</h2>
             <p>Cohabit delivers your furniture into your apartment</p>
         </div>
@@ -19,7 +19,7 @@
     <div class="slider" id="slider">
         <div class="slides">
             <div class="slide">
-                <img src="<?php echo get_theme_file_uri( 'assets/images/FrontPageStepOne.svg' ); ?>" alt="">
+                <img src="<?php echo get_theme_file_uri( 'assets/images/FrontPageStepOne.png' ); ?>" alt="">
                 <h2>Convenient</h2>
                 <p>Cohabit delivers your furniture into your apartment</p>
             </div>

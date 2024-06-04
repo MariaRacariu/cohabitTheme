@@ -1,0 +1,42 @@
+.archiveContainer{
+    display:flex ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+
+}
+
+.userStoryContainer{
+    max-width: 400px;
+    box-shadow: 10px 4px 40px #aeaeae;
+    padding: 20px;
+}
+
+.infoTextContainer{
+    line-height: 25px;
+    height: 200px;
+}
+
+.readMoreButton{
+    border: #1E1E1E 1px solid;
+    border-radius: 40px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.readMoreButtonContainer{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+   .infoTextContainer{
+    height: auto;
+   }
+
+   .readMoreButtonContainer{
+        margin-top: 30px;
+   }
+}
