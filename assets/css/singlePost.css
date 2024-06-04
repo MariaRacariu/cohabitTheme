@@ -1,0 +1,34 @@
+p{
+    line-height: 25px;
+    font-size: 18px;
+}
+
+figure{
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent > div{
+    max-width: 60%;
+    padding-top: 30px;
+}
+
+.mainHeading{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+    .mainContent > div{
+        max-width: 100%;
+        margin: 20px;
+        padding-top: 10px;
+    }
+}
