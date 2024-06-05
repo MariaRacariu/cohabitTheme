@@ -79,6 +79,25 @@ get_header();
 
 
 
+<div>
+    <div class="your-class">
+        <div>        
+            <img src="<?php echo get_theme_file_uri( 'assets/images/test/image1.jpg' ); ?>" alt="" class="testImage">
+        </div>
+        <div>        
+            <img src="<?php echo get_theme_file_uri( 'assets/images/test/image2.jpg' ); ?>" alt="" class="testImage">
+        </div>
+        <div>        
+            <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <div class="ourStoryContainer">
     <div class="ourStoryHeading">
         <h2>Our Story</h2>
