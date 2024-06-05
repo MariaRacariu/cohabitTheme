@@ -123,3 +123,6 @@ if (window.innerWidth <= 700) {
         }
     })
 }
+
+
+// Customer Reviews Slider
