@@ -1,8 +1,6 @@
 <div class="customerReviewsContainer">
     <div class="customerReviewsRule">
-        <div>
-            <h3 class="customerReviewsTitle">What our customers say</h3>
-        </div>
+        
 
         <?php
         $customerReviews = new WP_Query([

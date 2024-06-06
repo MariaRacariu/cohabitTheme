@@ -126,6 +126,11 @@
 
 /* Customer Reviews */
 
+.customerReviewsTitle{
+    font-size: 35px;
+    margin-left: 100px;
+}
+
 .reviewSlider{
     max-width: 85%;
 }
@@ -196,6 +201,7 @@
 
 /* Logo Slider */
 .logoTitleContainer {
+    margin-top: 50px;
     width: 100%;
     text-align: center;
 }
@@ -293,5 +299,6 @@
     /* Customer Reviews */
     .customerReviewsTitle {
         text-align: center;
+        margin-left: 0px;
     }
 }

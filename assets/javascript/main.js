@@ -140,6 +140,7 @@ $(document).ready(function(){
         pauseOnHover: true,
         swipe: true,
         swipeToSlide: true,
+        adaptiveHeight: true,
         centerMode: true,
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev">Previous</button>',
@@ -157,8 +158,6 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 1,
                     arrows: false,
-                    adaptiveHeight: true,
-                    
                 }
             }
         ]

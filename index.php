@@ -8,6 +8,11 @@ get_template_part('template-parts/frontPageMovingInfo');
 
 // get_template_part('template-parts/frontPageCustomerReviews');
 ?>
+<div>
+<div>
+        <h3 class="customerReviewsTitle">What our customers say</h3>
+    </div>
+
 <div class="sliderContainer">
     <div class="reviewSlider">
     <?php
@@ -71,6 +76,7 @@ get_template_part('template-parts/frontPageMovingInfo');
     ?>
     </div>
     
+</div>
 </div>
 
 <?php
