@@ -23,7 +23,7 @@ function cohabit_enqueue_scripts(){
 
     // Enqueue Scripts
     wp_enqueue_script('navigation', get_template_directory_uri() . '/assets/javascript/navigation.js', [], filemtime(get_template_directory(). '/assets/javascript/navigation.js'), true);
-    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.slim.js', '3.7.1', array('aboutJS'), true);
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.js', '3.7.1', true);
 
     // Enqueue Registered Scripts and Styles
     if(is_page('Cohabit')){
