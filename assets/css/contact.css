@@ -1,0 +1,70 @@
+.contactFormContainer{
+    width: 50%;
+    padding-left: 50px;
+}
+
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contactInfoContainer{
+    padding-right: 50px;
+}
+
+.introHeading{
+    font-size: 30px;
+}
+
+.messageInput{
+    width: 60% !important;
+}
+
+.formLinks{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.linkText:hover{
+    text-decoration: underline;
+}
+
+.linksContainer{
+    max-width: fit-content;
+}
+
+@media only screen and (min-width: 1242px) {
+    .footerContainer{
+        position: fixed;
+    }
+}
+
+@media only screen and (max-width: 1156px){
+    .contactFormContainer{
+        width: 95%;
+        padding-left: 0px;
+    }
+
+    .contactInfoContainer{
+        padding-right: 0px;
+    }
+
+    .mainContainer{
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-left: 20px;
+    }
+    .messageInput{
+       width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .messageInput{
+        width: 70% !important;
+    }
+}

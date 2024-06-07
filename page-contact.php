@@ -5,32 +5,23 @@ Template Name: Custom Template for How Cohabit Works
 
 get_header(); 
 ?>
-
-<style>
-.devContainer{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.devContainer > div >p{
-    padding: 20px;
-    font-size: 20px;
-}
-
-.devImage{
-    text-align: center;
-    max-width: 100%;
-   
-}
-</style>
-<div class="devContainer">
-    <div>
-        <p>This is the "Contact" This page is under development</p>
-        <img src="<?php echo get_theme_file_uri( 'assets/images/stillWorkingOn.svg' ); ?>" alt="" class="devImage">
+<div>
+    <div class="mainContainer">
+        <div class="contactFormContainer">
+            <?php echo do_shortcode('[wpforms id="90"]'); ?>
+        </div>
+        <div class="contactInfoContainer">
+            <h2 class="introHeading">Get in touch with us</h2>
+            <p>amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <div class="linksContainer">
+                <div>
+                    <a href="mailto:hello@cohabit.se" class="formLinks"><i class="fa-solid fa-envelope fa-xl"></i><p class="linkText">hello@cohabit.se</p></a>
+                </div>
+                <div>
+                    <a href="tel:+46 7123 456 487" class="formLinks"><i class="fa-solid fa-phone fa-xl"></i><p class="linkText">07123 456 487</p></a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

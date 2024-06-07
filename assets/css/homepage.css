@@ -187,6 +187,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .slick-prev::before, .slick-next::before{
@@ -283,14 +284,19 @@
     /* Customer reviews cards */
     
     .slick-slide {
-        margin: 0 27px;
-        margin-top: 40px;
-        margin-bottom: 40px;
-        
+        margin: 40px 10px 40px 10px;       
     }
 
     .slick-list {
         margin: 0 -27px;
+    }
+
+    .reviewSlider{
+        max-width: 95%;
+    }
+
+    .sliderCard{
+        padding: 25px;
     }
 }
 
@@ -300,5 +306,6 @@
     .customerReviewsTitle {
         text-align: center;
         margin-left: 0px;
+        padding: 5px;
     }
 }

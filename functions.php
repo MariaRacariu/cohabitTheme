@@ -11,6 +11,7 @@ function cohabit_enqueue_scripts(){
     wp_register_style ('slickStylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css', '1.8.1', array('aboutPageStylesheet'), 'all');
     wp_register_style ('slickStylesheetTheme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css', '1.8.1', array('aboutPageStylesheet'), 'all');
     wp_register_style('homepageStyleSheet', get_template_directory_uri(). '/assets/css/homepage.css', 'all');
+    wp_register_style('contactStyleSheet', get_template_directory_uri(). '/assets/css/contact.css', 'all');
     
     //Register Scripts
     wp_register_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
@@ -24,6 +25,7 @@ function cohabit_enqueue_scripts(){
     // Enqueue Scripts
     wp_enqueue_script('navigation', get_template_directory_uri() . '/assets/javascript/navigation.js', [], filemtime(get_template_directory(). '/assets/javascript/navigation.js'), true);
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.7.1.js', '3.7.1', true);
+	wp_enqueue_script ('fontAwesome', 'https://kit.fontawesome.com/251044f349.js', '6.0', true);
 
     // Enqueue Registered Scripts and Styles
     if(is_page('Cohabit')){
@@ -66,6 +68,11 @@ function cohabit_enqueue_scripts(){
         // Styles
         wp_enqueue_style('archive');
     }
+
+	if(is_page('Contact')){
+		// Style
+		wp_enqueue_style('contactStyleSheet');
+	}
 }
 add_action('wp_enqueue_scripts', 'cohabit_enqueue_scripts');
 
