@@ -3,7 +3,25 @@
     flex-wrap: wrap;
     justify-content: space-around;
     row-gap: 50px;
+}
 
+.imageContainer{
+    text-align: center;
+    width: 300px;
+    height:auto;
+}
+.profileImage{
+    max-width: 400px;
+    max-height: 250px;
+}
+.cardTitle{
+    font-size: large;
+}
+
+.textContainer{
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .userStoryContainer{
@@ -14,7 +32,7 @@
 
 .infoTextContainer{
     line-height: 25px;
-    height: 200px;
+    height: 250px;
 }
 
 .readMoreButton{

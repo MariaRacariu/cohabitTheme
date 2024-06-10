@@ -203,7 +203,7 @@ function create_customerexperiences_cpt() {
 		'has_archive' => true,
 		'hierarchical' => true,
 		'exclude_from_search' => false,
-		'show_in_rest' => false,
+		'show_in_rest' => true,
 		'publicly_queryable' => true,
 		'capability_type' => 'post',
 	);
