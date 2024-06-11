@@ -8,16 +8,19 @@ function cohabit_enqueue_scripts(){
     wp_register_style('aboutPageStylesheet', get_template_directory_uri(). '/assets/css/about.css', array('stylesheet'), 'all');
     wp_register_style('singlePage', get_template_directory_uri(). '/assets/css/singlePost.css', 'all');
     wp_register_style('archive', get_template_directory_uri(). '/assets/css/archive.css', 'all');
-    wp_register_style ('slickStylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css', '1.8.1', array('aboutPageStylesheet'), 'all');
-    wp_register_style ('slickStylesheetTheme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css', '1.8.1', array('aboutPageStylesheet'), 'all');
+    wp_register_style('slickStylesheet', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css', '1.8.1', 'all');
+    wp_register_style('slickStylesheetTheme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css', '1.8.1', 'all');
     wp_register_style('homepageStyleSheet', get_template_directory_uri(). '/assets/css/homepage.css', 'all');
     wp_register_style('contactStyleSheet', get_template_directory_uri(). '/assets/css/contact.css', 'all');
+    wp_register_style('collaborationsStyleSheet', get_template_directory_uri(). '/assets/css/collaborations.css', 'all');
     
     //Register Scripts
     wp_register_script('main-js', get_template_directory_uri() . '/assets/javascript/main.js', [], filemtime(get_template_directory(). '/assets/javascript/main.js'), true);
     wp_register_script('how-Cohabit-Works', get_template_directory_uri() . '/assets/javascript/howCohabitWorks.js', [], filemtime(get_template_directory(). '/assets/javascript/howCohabitWorks.js'), true);
     wp_register_script('aboutJS', get_template_directory_uri() . '/assets/javascript/about.js', [], filemtime(get_template_directory(). '/assets/javascript/about.js'), true);
-    wp_register_script('slickJS', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('aboutJS'), '1.8.1', true);
+    wp_register_script('slickJS', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', '1.8.1', true);
+	wp_register_script('collaborationsJS', get_template_directory_uri() . '/assets/javascript/collaborations.js', [], filemtime(get_template_directory(). '/assets/javascript/collaborations.js'), true);
+
 
     // Enqueue Styles
     wp_enqueue_style('stylesheet', get_stylesheet_uri(), [], filemtime(get_template_directory(). '/style.css'),'all');
@@ -72,6 +75,17 @@ function cohabit_enqueue_scripts(){
 	if(is_page('Contact')){
 		// Style
 		wp_enqueue_style('contactStyleSheet');
+	}
+
+	if(is_page('Collaborations')){
+		// Scripts
+		wp_enqueue_script('slickJS');
+		wp_enqueue_script('collaborationsJS');
+
+		// Style
+		wp_enqueue_style('slickStylesheet');
+        wp_enqueue_style('slickStylesheetTheme');
+		wp_enqueue_style('collaborationsStyleSheet');
 	}
 }
 add_action('wp_enqueue_scripts', 'cohabit_enqueue_scripts');

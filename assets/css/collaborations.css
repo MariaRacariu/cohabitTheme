@@ -1,0 +1,247 @@
+/* Intro Part of page */
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+.introHeading {
+    font-size: 50px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+.highlight {
+    color: #DFB447;
+}
+
+.introText {
+    font-size: x-large;
+    font-weight: 500;
+    margin: 10px 20px 10px 20px;
+}
+
+.introButtonContainer {
+    margin-top: 20px;
+}
+
+.introButton {
+    text-decoration: none;
+    background-color: #63C2C9;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    font-size: larger;
+    font-weight: 400;
+}
+
+/* USPs Slider */
+.sliderContainer{
+    margin-top: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.sliderImage{
+    max-width: 300px;
+    width: auto;
+    height: 200px;
+    object-fit: contain;
+}
+
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 250px;
+    width: 100%;
+}
+
+/* Company Review */
+.quoteContainer{
+    margin-top: 100px;
+    box-shadow: 10px 4px 40px #aeaeae;
+    padding: 20px;
+}
+
+.companyReviewContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviewImage{
+    border-radius: 200px;
+    width: 300px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.companyQuoteContainer{
+    max-width: 800px;
+    text-align: center;
+}
+
+.companyQuote{
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.reviewInfoContainer{
+    text-align: center;
+    font-size: larger;
+}
+
+.reviewInfoContainer >p{
+    margin: 10px;
+}
+
+.companyLogoContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.companyLogoContainer > img{
+    height: 60px;
+    width: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .companyReviewContainer{
+        flex-direction: column;
+    }
+
+    .reviewImage{
+        margin-left: 0px;
+    }
+}
+
+/* Contact Form */
+.contactContainer{
+    display: flex;
+    margin-top: 100px;
+}
+
+.contactInfoContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactInfoHeading{
+    font-size: 50px;
+    width: 350px;
+}
+
+.companyHighlight{
+    color: #63C2C9;
+}
+
+.contactFormContainer{
+    width: 50%;
+}
+
+.contactInfoText{
+    font-size: 25px;
+    width: 400px;
+}
+
+.contactFormTitle{
+    font-size: 25px;
+}
+
+.messageInput{
+    max-width: 60% !important; 
+}
+
+@media only screen and (max-width: 900px) {
+    .contactContainer{
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .contactInfoContainer{
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .contactFormContainer{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .messageInput{
+        max-width: 100% !important; 
+    }
+}
+
+/* Cohabit News Slider */
+
+/* Company Logos Slider */
+/* Logo Slider */
+.logoTitleContainer {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.logoTitle {
+    font-size: 35px;
+    margin: 20px;
+}
+
+.logosSliderTrack {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.logosSlides {
+    text-align: center;
+}
+
+.defaultLogoSlide>img,
+.logoSlide>img {
+    max-width: 250px;
+}
+
+.logoSlide {
+    height: 120px;
+}
+
+@media screen and (max-width: 1250px) {
+
+    #slider {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #defaultContent {
+        display: none;
+    }
+
+    .slide>img {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #logoSlider {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #logosDefaultContent {
+        display: none;
+    }
+}
