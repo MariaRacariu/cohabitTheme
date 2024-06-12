@@ -86,6 +86,37 @@ get_header();
 </div>
 
 <!-- Cohabit News Slider -->
+<div>
+    <div class="newsContainer">
+        <div>
+            <h2>Cohabit in spotlight</h2>
+        </div>
+        <div class="cohabitNewsSlider">
+        <?php
+        $args = array(
+                'post_type' => 'cohabitnews',
+                'order' => 'DEC',
+        );
+
+        $news = new WP_Query($args);
+
+        if($news -> have_posts()){
+            while($news -> have_posts()){
+                $news -> the_post();
+                ?>
+                <div class="newsSlide">
+                    <div class="newsImageContainer"><?php the_post_thumbnail(); ?></div>
+                    <div><?php the_date(); ?></div>
+                    <div><?php the_title(); ?></div>
+                    <div class="newsContentContainer"><?php the_content(); ?></div>
+                </div>
+                <?php
+            }
+        }
+            ?>
+        </div>
+    </div>
+</div>
 
 <!-- Company Logos Slider -->
  <?php get_template_part('template-parts/colaboratorsList'); ?>

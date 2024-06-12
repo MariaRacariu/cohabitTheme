@@ -66,8 +66,9 @@ get_header();
     <div>
         <div class="faqSectionButton">
             <div class="faqHeadingContainer">
+                <!-- <i class="fa-solid fa-plus fa-xl"></i> -->
+                <i class="fa-solid fa-hand-pointer fa-xl"></i>
                 <h3>Furniture Selection</h3>
-                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
             </div>
             <div class="faqQAContainer">
                 <div>
@@ -95,8 +96,9 @@ get_header();
     <div>
         <div class="faqSectionButton">
             <div class="faqHeadingContainer">
+                <!-- <i class="fa-solid fa-plus fa-xl"></i> -->
+                <i class="fa-regular fa-clock fa-xl"></i>
                 <h3>Rental duration</h3>
-                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
             </div>
             <div class="faqQAContainer">
                 <div>
@@ -109,8 +111,9 @@ get_header();
     <div>
         <div class="faqSectionButton">
             <div class="faqHeadingContainer">
+                <!-- <i class="fa-solid fa-plus fa-xl"></i> -->
+                <i class="fa-solid fa-bell-concierge fa-xl"></i>
                 <h3>Rental service</h3>
-                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
             </div>
             <div class="faqQAContainer">
                 <div>
@@ -131,8 +134,9 @@ get_header();
     <div>
         <div class="faqSectionButton">
             <div class="faqHeadingContainer">
+                <!-- <i class="fa-solid fa-plus fa-xl"></i> -->
+                <i class="fa-solid fa-calendar-days fa-xl"></i>
                 <h3>Booking / Customisation / Cancellation</h3>
-                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
             </div>
             <div class="faqQAContainer">
                 <div>
@@ -163,8 +167,9 @@ get_header();
     <div>
         <div class="faqSectionButton">
             <div class="faqHeadingContainer">
+                <!-- <i class="fa-solid fa-plus fa-xl"></i> -->
+                <i class="fa-regular fa-credit-card fa-xl"></i>
                 <h3>Payment</h3>
-                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
             </div>
             <div class="faqQAContainer">
                 <div>
@@ -178,8 +183,9 @@ get_header();
     <div>
         <div class="faqSectionButton">
             <div class="faqHeadingContainer">
+                <!-- <i class="fa-solid fa-plus fa-xl"></i> -->
+                <i class="fa-solid fa-truck fa-xl"></i>
                 <h3>Delivery / Collection</h3>
-                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
             </div>
             <div class="faqQAContainer">
                 <div>
@@ -201,8 +207,9 @@ get_header();
     <div>
         <div class="faqSectionButton">
             <div class="faqHeadingContainer">
+                <!-- <i class="fa-solid fa-plus fa-xl"></i> -->
+                <i class="fa-solid fa-rotate-left fa-xl"></i>
                 <h3>Exchange / Return</h3>
-                <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
             </div>
             <div class="faqQAContainer">
                 <div>

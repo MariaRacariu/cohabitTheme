@@ -1,4 +1,4 @@
-// Slick slider
+// Slick slider USPs
 $(document).ready(function(){
     $('.collaborationsSlider').slick({
         dots: false,
@@ -19,6 +19,44 @@ $(document).ready(function(){
                     swipe: true,
                     swipeToSlide: true,
                     adaptiveHeight: true,
+                    arrows: false,
+                }
+            }
+        ]
+    });
+});
+
+// Slick slider for Cohabit News
+$(document).ready(function(){
+    $('.cohabitNewsSlider').slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        slidesPerRow: 3,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        cssEase: 'linear',
+        pauseOnHover: true,
+        swipe: true,
+        swipeToSlide: true,
+        adaptiveHeight: true,
+        centerMode: false,
+        arrows: true,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 1700,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
                 }
             }
         ]

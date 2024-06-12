@@ -226,4 +226,62 @@ function create_customerexperiences_cpt() {
 }
 add_action( 'init', 'create_customerexperiences_cpt', 0 );
 
+// Register Custom Post Type Cohabit News
+function create_cohabitnews_cpt() {
+
+	$labels = array(
+		'name' => _x( 'Cohabit News', 'Post Type General Name', 'textdomain' ),
+		'singular_name' => _x( 'Cohabit News', 'Post Type Singular Name', 'textdomain' ),
+		'menu_name' => _x( 'Cohabit News', 'Admin Menu text', 'textdomain' ),
+		'name_admin_bar' => _x( 'Cohabit News', 'Add New on Toolbar', 'textdomain' ),
+		'archives' => __( 'Cohabit News Archives', 'textdomain' ),
+		'attributes' => __( 'Cohabit News Attributes', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Cohabit News:', 'textdomain' ),
+		'all_items' => __( 'All Cohabit News', 'textdomain' ),
+		'add_new_item' => __( 'Add New Cohabit News', 'textdomain' ),
+		'add_new' => __( 'Add New', 'textdomain' ),
+		'new_item' => __( 'New Cohabit News', 'textdomain' ),
+		'edit_item' => __( 'Edit Cohabit News', 'textdomain' ),
+		'update_item' => __( 'Update Cohabit News', 'textdomain' ),
+		'view_item' => __( 'View Cohabit News', 'textdomain' ),
+		'view_items' => __( 'View Cohabit News', 'textdomain' ),
+		'search_items' => __( 'Search Cohabit News', 'textdomain' ),
+		'not_found' => __( 'Not found', 'textdomain' ),
+		'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+		'featured_image' => __( 'Featured Image', 'textdomain' ),
+		'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+		'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+		'insert_into_item' => __( 'Insert into Cohabit News', 'textdomain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Cohabit News', 'textdomain' ),
+		'items_list' => __( 'Cohabit News list', 'textdomain' ),
+		'items_list_navigation' => __( 'Cohabit News list navigation', 'textdomain' ),
+		'filter_items_list' => __( 'Filter Cohabit News list', 'textdomain' ),
+	);
+	$args = array(
+		'label' => __( 'Cohabit News', 'textdomain' ),
+		'description' => __( 'All events/news from Cohabit that will be displayed on the collaborations page', 'textdomain' ),
+		'labels' => $labels,
+		'menu_icon' => 'dashicons-admin-site-alt',
+		'supports' => array('title', 'editor', 'excerpt', 'thumbnail', 'page-attributes', 'post-formats', 'custom-fields'),
+		'taxonomies' => array(),
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'menu_position' => 5,
+		'show_in_admin_bar' => true,
+		'show_in_nav_menus' => true,
+		'can_export' => true,
+		'has_archive' => true,
+		'hierarchical' => true,
+		'exclude_from_search' => true,
+		'show_in_rest' => true,
+		'publicly_queryable' => true,
+		'capability_type' => 'post',
+	);
+	register_post_type( 'cohabitnews', $args );
+
+}
+add_action( 'init', 'create_cohabitnews_cpt', 0 );
+
 ?>

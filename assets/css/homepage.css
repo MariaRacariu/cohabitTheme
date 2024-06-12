@@ -132,7 +132,7 @@
 }
 
 .reviewSlider{
-    max-width: 85%;
+    width: 100%;
 }
 
 .userInfoContainer{
@@ -145,6 +145,7 @@
     width: 100%;
     padding: 50px;
     margin: 50px;
+    box-shadow: 0px 0px 10px #cdcdcd;
 }
 
 .customerReviewsImage {
@@ -195,8 +196,12 @@
     font-size: 25px;
 }
 
-.slick-center{
-    box-shadow: 10px 4px 40px #aeaeae;
+.slick-prev{
+    left: 30px;
+}
+
+.slick-next{
+    right: 30px;
 }
 
 
