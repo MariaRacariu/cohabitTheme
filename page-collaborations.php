@@ -89,7 +89,7 @@ get_header();
 <div>
     <div class="newsContainer">
         <div>
-            <h2>Cohabit in spotlight</h2>
+            <h2 class="newsSectionHeading">Cohabit in spotlight</h2>
         </div>
         <div class="cohabitNewsSlider">
         <?php
@@ -104,10 +104,10 @@ get_header();
             while($news -> have_posts()){
                 $news -> the_post();
                 ?>
-                <div class="newsSlide">
+                <div class="newsSlideCard">
                     <div class="newsImageContainer"><?php the_post_thumbnail(); ?></div>
-                    <div><?php the_date(); ?></div>
-                    <div><?php the_title(); ?></div>
+                    <div class="newsCardHeading"><h3><?php the_title(); ?></h3></div>
+                    <div class="newsCardDate"><?php the_date(); ?></div>
                     <div class="newsContentContainer"><?php the_content(); ?></div>
                 </div>
                 <?php
