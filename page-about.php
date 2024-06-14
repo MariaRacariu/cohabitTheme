@@ -6,7 +6,7 @@ Template Name: Custom Template for How Cohabit Works
 get_header(); 
 ?>
 
-<div class="introContainer">
+<div class="introContainer" id="drivingCircularity">
     <div class="introWrapper">
         <div class="leftWrapper">
             <div class="textIntroWrapper">
@@ -60,7 +60,7 @@ get_header();
 
 
 
-<div class="reportContainer">
+<div class="reportContainer" id="sustainabilityReport">
     <div class="reportWrapper">
         <div class="reportImageContainer">
             <img src="<?php echo get_theme_file_uri( 'assets/images/report.webp' ); ?>" alt="">
@@ -79,7 +79,7 @@ get_header();
 
 
 
-<div>
+<!-- <div>
     <div class="your-class">
         <div>        
             <img src="<?php echo get_theme_file_uri( 'assets/images/test/image1.jpg' ); ?>" alt="" class="testImage">
@@ -91,14 +91,14 @@ get_header();
             <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
         </div>
     </div>
-</div>
+</div> -->
 
 
 
 
 
 
-<div class="ourStoryContainer">
+<div class="ourStoryContainer" id="ourStory">
     <div class="ourStoryHeading">
         <h2>Our Story</h2>
     </div>

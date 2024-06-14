@@ -189,9 +189,6 @@
 }
 
 /* Cohabit News Slider */
-.cohabitNewsSlider{
-    overflow: hidden;
-}
 
 .newsImageContainer {
     display: flex;
@@ -215,25 +212,17 @@
 
 .newsSlideCard{
     box-shadow: 0px 0px 10px #cdcdcd;
-    max-width: 400px;
     padding: 50px;
     margin: 50px;
 }
-.slick-list {
-    left: 100px;
-}
-
-.slick-list{
-    padding: 20px;
-}
 
 .slick-prev{
-    left: 30px;
+    left: 10px;
     z-index: 1;
 }
 
 .slick-next{
-    right: 30px;
+    right: 25px;
     z-index: 1;
 }
 
@@ -266,7 +255,7 @@
     background-color: #63C2C9;
     color: black;
     padding: 10px 15px 10px 15px;
-    
+
 }
 
 /* Company Logos Slider */

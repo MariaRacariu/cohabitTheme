@@ -1,3 +1,12 @@
+// Navigation
+const dropdown = document.querySelector('.sub-menu');
+const navItem = document.querySelector('#menu-item-29');
+
+navItem.addEventListener("mouseover", () => {
+    dropdown.style.display = 'block';
+    console.log("Hello");
+});
+
 // Slider for front page
 let slideIndex = 0;
 const slides = document.querySelectorAll('.slide');

@@ -33,7 +33,6 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        slidesPerRow: 3,
         autoplay: false,
         autoplaySpeed: 3000,
         cssEase: 'linear',
@@ -43,7 +42,6 @@ $(document).ready(function(){
         adaptiveHeight: true,
         centerMode: false,
         arrows: true,
-        variableWidth: true,
         responsive: [
             {
                 breakpoint: 1700,
