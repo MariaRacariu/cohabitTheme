@@ -257,7 +257,7 @@
 
 }
 
-/* Company Logos Slider */
+/* Logo Slider */
 .logoTitleContainer {
     margin-top: 50px;
     width: 100%;
@@ -268,54 +268,20 @@
     font-size: 35px;
     margin: 20px;
 }
-
-.logosSliderTrack {
+/* Comment this out to show slider if needed */
+.logosSlider {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-}
-
-.logosSlides {
     text-align: center;
 }
 
-.defaultLogoSlide>img,
+
 .logoSlide>img {
     max-width: 250px;
 }
 
 .logoSlide {
     height: 120px;
-}
-
-@media screen and (max-width: 1250px) {
-
-    #slider {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    #defaultContent {
-        display: none;
-    }
-
-    .slide>img {
-        max-width: 350px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #logoSlider {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    #logosDefaultContent {
-        display: none;
-    }
-}
+} 
