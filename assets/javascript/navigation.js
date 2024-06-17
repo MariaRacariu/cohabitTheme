@@ -48,3 +48,12 @@ menuIconClose.addEventListener("click", function () {
 
     cohabitLogo.style.height = "";
 });
+
+// Navigation Dropdown Temp
+const dropdown = document.querySelector('.sub-menu');
+const navItem = document.querySelector('#menu-item-29');
+
+navItem.addEventListener("mouseover", () => {
+    dropdown.style.display = 'block';
+    console.log("Hello");
+});

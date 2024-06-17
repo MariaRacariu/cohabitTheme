@@ -41,38 +41,26 @@
     font-weight: 400;
 }
 
-/* Steps Info */
-.frontPageInfoContainer {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+/* USPs SLider */
+.uspsSliderContainer{
+    margin-top: 30px;
     text-align: center;
 }
 
-/* Slider Steps info */
-
-.slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.slides {
+.imageContainer{
     display: flex;
-    transition: transform 0.5s ease-in;
-    height: 350px;
+    justify-content: center;
+    align-items: end;
+    height: 250px;
+    width: 100%;
 }
 
-.slide {
-    flex: 0 0 100%;
+.sliderImage{
+    max-width: 300px;
+    width: auto;
+    height: 200px;
+    object-fit: contain;
 }
-
-.slide > p{
-    margin: 0px 20px 0px 20px;
-}
-
-/* Moving Info */
 
 .movingInfoShadow {
     margin: 100px 0px 50px 0px;
@@ -177,6 +165,7 @@
     line-height: 25px;
     font-style: italic;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .slick-prev::before, .slick-next::before{
@@ -206,26 +195,23 @@
     font-size: 35px;
     margin: 20px;
 }
-
-.logosSliderTrack {
+/* Comment this out to show slider if needed */
+.logosSlider {
     display: flex;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-}
-
-.logosSlides {
     text-align: center;
 }
 
-.defaultLogoSlide>img,
+
 .logoSlide>img {
     max-width: 250px;
 }
 
 .logoSlide {
     height: 120px;
-}
+} 
 
 /* Smaller than 900px */
 @media only screen and (max-width: 900px) {
@@ -246,36 +232,7 @@
     }
 }
 
-@media screen and (max-width: 1250px) {
-
-    #slider {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    #defaultContent {
-        display: none;
-    }
-
-    .slide>img {
-        max-width: 350px;
-    }
-}
-
 @media screen and (max-width: 700px) {
-    #logoSlider {
-        display: flex;
-        justify-content: center;
-        margin-top: 40px;
-        text-align: center;
-    }
-
-    #logosDefaultContent {
-        display: none;
-    }
-
     /* Customer reviews cards */
     
     .slick-slide {
