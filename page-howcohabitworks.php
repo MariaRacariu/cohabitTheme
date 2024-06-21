@@ -61,7 +61,7 @@ get_header();
 </div>
 
 
-<div class="faqAllContainer">
+<div class="faqAllContainer" id="faq">
     <h2 class="faqTitle">FAQ</h2>
     <div>
         <div class="faqSectionButton">

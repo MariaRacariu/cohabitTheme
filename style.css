@@ -89,14 +89,29 @@ body {
     position: absolute;
     padding: 20px;
     box-shadow: 10px 4px 40px #d2d2d2;
+    background-color: #F7F9F7;
 }
 
 .sub-menu > li{
     padding: 10px;
 }
 
-#menu-item-29:hover .sub-menu{
+#menu-item-29:hover .sub-menu, #menu-item-32:hover .sub-menu{
     display: block;
+    z-index: 1;
+    
+}
+
+#menu-item-29::after, #menu-item-32::after{
+    content: url("assets/images/arrowDown.svg");
+    color: #1E1E1E;
+}
+
+#menu-item-31 > a{
+    background-color: #63C2C9;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
 }
 
 /* Footer */
