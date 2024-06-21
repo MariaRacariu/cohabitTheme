@@ -1,5 +1,5 @@
 <div class="logoTitleContainer">
-    <h3 class="logoTitle">Our Collaborators</h3>
+    <h3 class="logoTitle"></h3>
 </div>
 
 <div class="">

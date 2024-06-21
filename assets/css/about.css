@@ -37,6 +37,7 @@
 
 .introHeading {
     font-size: 30px;
+    font-weight: 600;
 }
 
 .linkArrowIcon {
@@ -98,6 +99,7 @@
 
 .ourStoryWrapper{
     display: flex;
+    margin: 0px 100px 0px 100px;
 }
 
 .ourStoryTextContainer{
@@ -115,13 +117,14 @@
 }
 
 .ourStoryHeading{
-    font-size: 25px;
-    padding-left: 20px;
+    font-size: 30px;
+   margin-left: 100px;
+    font-weight: 600;
 }
 
 .ourStoryContainer{
     margin: 100px 0px 50px 0px;
-    box-shadow: 10px 4px 40px #aeaeae;
+    box-shadow: 10px 4px 40px #d2d2d2;
     padding: 20px 0px 20px 0px;
 }
 .reportWrapper{
@@ -135,8 +138,11 @@
 }
 
 .reportImageContainer > img{
-    max-width: 500px;
     height: auto;
+    width: 100%;
+    max-width: 500px;
+    max-height: none;
+    box-shadow: 10px 4px 40px #d4d4d4;
 }
 
 .reportTextContainer {
@@ -145,6 +151,7 @@
 
 .reportTextContainer > h2 {
     font-size: 30px;
+    font-weight: 600;
 }
 
 .reportTextContainer > p {
@@ -158,13 +165,13 @@
 }
 .reportLinks > a{
     text-decoration: none;
-  background-color: #63C2C9;
-  border: none;
-  border-radius: 25px;
-  padding: 10px 15px 10px 15px;
-  font-size: larger;
-  font-weight: 400;
-  max-width: fit-content;
+    background-color: #63C2C9;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    font-size: larger;
+    font-weight: 400;
+    max-width: fit-content;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -180,6 +187,7 @@
 
     .ourStoryWrapper{
         flex-direction: column;
+        margin: 0px 20px 0px 20px;
     }
 
     .ourStoryImageContainer{
@@ -198,9 +206,15 @@
         justify-content: center;
         align-items: center;
     }
+
     .reportTextContainer {
         padding-left: 0px;
-      }
+    }
+
+    .ourStoryHeading{
+        text-align: center;
+        margin-left: 0px;
+    }
 }
 
 
@@ -208,4 +222,103 @@
 .testImage{
     max-width: 500px;
     height: auto;
+}
+
+.slider-progress{
+	/* position: absolute; */
+	/* left: 0;
+	bottom: 0; */
+	width: 50%;
+	height: 10px;
+    background-color: #fff;
+    border: #63C2C9 solid 2px;
+    border-radius: 25px;
+}
+.slider-progress span{
+	/* position: absolute; */
+	/* left: 0; */
+	/* bottom: 0; */
+	display: block;
+	width: 0px;
+	height: 100%;
+	background-color: #63C2C9;
+	transition: all 0s linear;
+}
+.slider-progress span.active{
+	width: 100%;
+}
+
+/* Testing out style */
+.timelineSliderContainer{
+    box-shadow: 10px 4px 40px #d2d2d2;
+    padding: 50px 0px 50px 0px;
+    margin: 50px 0px 100px 0px;
+}
+
+.timelineSliderHeading{
+    margin-left: 100px;
+}
+
+.timelineSliderHeading > h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.timelineImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.timelineImageContainer > div{
+    width: 50%;
+    background-color: #aeaeae;
+    display: flex;
+    justify-content: center;
+}
+
+.progressBarContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.timelineInfoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timelineInfoContainer >div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 1000px) {
+    .timelineSliderHeading{
+        margin-left: 20px;
+    }
+
+    .timelineImageContainer > div{
+        width: 90%;
+    }
+
+    .timelineInfoContainer >div{
+        width: 90%;
+    }
+
+    .slider-progress{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .timelineInfoContainer >div{
+        flex-direction: column;
+    }
+    .timelineInfoContainer > div>div >p{
+       margin: 0px 0px 10px 0px;
+    }
 }

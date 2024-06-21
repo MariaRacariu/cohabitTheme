@@ -59,12 +59,14 @@ body {
 }
 
 .cohabitNavigationOptionsContainer>li,
-.cohabitFooterNavContainer>li {
+.cohabitFooterNavContainer>li,
+.sub-menu>li {
     list-style-type: none;
 }
 
 .cohabitNavigationOptionsContainer>li>a,
-.cohabitFooterNavContainer>li>a {
+.cohabitFooterNavContainer>li>a,
+.sub-menu>li>a {
     color: #1E1E1E;
     text-decoration: none;
     font-weight: 500;
@@ -77,12 +79,24 @@ body {
 }
 
 .cohabitNavigationOptionsContainer>li>a:hover,
-.cohabitFooterNavContainer>li>a:hover {
+.cohabitFooterNavContainer>li>a:hover,
+.sub-menu>li>a:hover {
     text-decoration: underline;
 }
 
 .sub-menu{
     display: none;
+    position: absolute;
+    padding: 20px;
+    box-shadow: 10px 4px 40px #d2d2d2;
+}
+
+.sub-menu > li{
+    padding: 10px;
+}
+
+#menu-item-29:hover .sub-menu{
+    display: block;
 }
 
 /* Footer */

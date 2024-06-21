@@ -79,28 +79,115 @@ get_header();
 
 
 
-<!-- <div>
-    <div class="your-class">
-        <div>        
-            <img src="<?php echo get_theme_file_uri( 'assets/images/test/image1.jpg' ); ?>" alt="" class="testImage">
+<div class="timelineSliderContainer">
+    <div>
+        <div class="timelineSliderHeading">
+            <h2>Cohabit's journey</h2>
         </div>
-        <div>        
-            <img src="<?php echo get_theme_file_uri( 'assets/images/test/image2.jpg' ); ?>" alt="" class="testImage">
+        <div class="your-class">
+            <div>
+                <div class="timelineImageContainer">
+                    <div>
+                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image1.jpg' ); ?>" alt="" class="testImage">
+                    </div>
+                </div>
+                <div class="timelineInfoContainer">
+                    <div>
+                        <div>
+                            <p>July 2022</p>
+                        </div>
+                        <div>
+                            <h3>Pilot Launch</h3>
+                            <p>Cohabit officially launches its pilot in Malmö.</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div>
+                <div class="timelineImageContainer">
+                    <div>
+                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image2.jpg' ); ?>" alt="" class="testImage">
+                    </div>
+                </div>
+                <div class="timelineInfoContainer">
+                    <div>
+                        <div>
+                            <p>August 2022</p>
+                        </div>
+                        <div>
+                            <h3>First Customer Arrive</h3>
+                            <p>Cohabit delivers furniture bundles to its first customer in Malmö.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div> 
+                <div class="timelineImageContainer">
+                    <div>                
+                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
+                    </div>
+                </div>
+                <div class="timelineInfoContainer">
+                    <div>
+                        <div>
+                            <p>May 2023</p>
+                        </div>
+                        <div>
+                            <h3>Venture Cup Finals</h3>
+                            <p>Cohabit becomes a finalist in Venture Cup, Sweden's largest startup competition.</p>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+            <div> 
+                <div class="timelineImageContainer">
+                    <div>                
+                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
+                    </div>
+                </div>
+                <div class="timelineInfoContainer">
+                    <div>
+                        <div>
+                            <p>August 2023</p>
+                        </div>
+                        <div>
+                            <h3>Lund Expansion</h3>
+                            <p>Cohabit expands its operation and delivers to customers in Lund.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>   
+                <div class="timelineImageContainer">
+                    <div>
+                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
+                    </div>
+                </div>
+                <div class="timelineInfoContainer">
+                    <div>
+                        <div>
+                            <p>November 2023</p>
+                        </div>
+                        <div>
+                            <h3>Vinnova Fund</h3>
+                            <p>Cohabit receives the Innovative Impact Fund from Vinnova.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>        
-            <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
+        <!-- This will be the progress bar that will load -->
+        <div class="progressBarContainer">
+            <div class="slider-progress">
+                <span></span>
+            </div>
         </div>
-    </div>
-</div> -->
-
-
-
-
-
+     </div>
+</div>
 
 <div class="ourStoryContainer" id="ourStory">
-    <div class="ourStoryHeading">
-        <h2>Our Story</h2>
+    <div>
+        <h2 class="ourStoryHeading">Our Story</h2>
     </div>
     <div class="ourStoryWrapper">
         <div class="ourStoryImageContainer">
