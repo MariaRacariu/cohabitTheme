@@ -82,14 +82,14 @@
 .movingInfoHeading {
     font-size: 40px;
     font-weight: 600;
-    margin: 20px;
+    margin: 40px auto 20px auto;
 }
 
 .movingInfoParagraph {
     max-width: 600px;
     font-size: large;
     line-height: 1.5;
-    margin: 20px;
+    
 }
 
 .movingInfoButtonContainer {
@@ -103,7 +103,7 @@
     padding: 10px 15px 10px 15px;
     font-size: larger;
     font-weight: 500;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 .movingInfoImageContainer {
@@ -127,7 +127,7 @@
 
 .sliderCard{
     padding: 50px;
-    margin: 50px;
+    margin: 50px 50px 10px 50px;
     box-shadow: 0px 0px 10px #cdcdcd;
 }
 
@@ -184,34 +184,7 @@
 }
 
 
-/* Logo Slider */
-.logoTitleContainer {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-}
-
-.logoTitle {
-    font-size: 35px;
-    margin: 20px;
-}
-/* Comment this out to show slider if needed */
-.logosSlider {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-
-.logoSlide>img {
-    max-width: 150px;
-}
-
-.logoSlide {
-    height: 120px;
-} 
+ 
 
 /* Smaller than 900px */
 @media only screen and (max-width: 900px) {
@@ -249,6 +222,11 @@
 
     .sliderCard{
         padding: 25px;
+    }
+
+    .movingInfoButtonContainer{
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
 

@@ -2,9 +2,11 @@
 <div class="movingInfoContainer">
     <div class="movingInfoTextContainer">
         <div>
-            <h2 class="movingInfoHeading">Moving into an empty apartment?</h2>
-            <p class="movingInfoParagraph">You’ve just arrived in Sweden as an international student. As  you open the door, there’s no bed, no chair, no table—nothing to make it feel like home.</p>
-            <p class="movingInfoParagraph">Now you are faced with the challenge of furnishing your place- and that’s where Cohabit comes in.</p>
+            <div>
+                <h2 class="movingInfoHeading">Moving into an empty apartment?</h2>
+                <p class="movingInfoParagraph">You’ve just arrived in Sweden as an international student. As  you open the door, there’s no bed, no chair, no table—nothing to make it feel like home.</p>
+                <p class="movingInfoParagraph">Now you are faced with the challenge of furnishing your place- and that’s where Cohabit comes in.</p>
+            </div>
             <div class="movingInfoButtonContainer">
                 <a href="" class="movingInfoButton">How Cohabit Works</a>
             </div>
