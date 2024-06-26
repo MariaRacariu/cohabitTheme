@@ -242,12 +242,10 @@
 }
 
 .newsCardDate{
-    background-color: #63C2C9;
     width: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0px 15px 0px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .newsCardButton>a{

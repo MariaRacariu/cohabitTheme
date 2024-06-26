@@ -235,26 +235,6 @@
     }
 }
 
-@media screen and (max-width: 700px) {
-    /* Customer reviews cards */
-    
-    .slick-slide {
-        margin: 40px 10px 40px 10px;       
-    }
-
-    .slick-list {
-        margin: 0 -27px;
-    }
-
-    .reviewSlider{
-        max-width: 95%;
-    }
-
-    .sliderCard{
-        padding: 25px;
-    }
-}
-
 @media screen and (max-width: 1416px) {
 
     /* Customer Reviews */
