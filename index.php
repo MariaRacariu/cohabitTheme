@@ -80,7 +80,6 @@ get_template_part('template-parts/frontPageMovingInfo');
 </div>
 
 <?php
-get_template_part('template-parts/colaboratorsList');
 get_footer(); 
 
 ?>

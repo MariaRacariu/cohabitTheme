@@ -89,6 +89,7 @@
     max-width: 600px;
     font-size: large;
     line-height: 1.5;
+    
 }
 
 .movingInfoButtonContainer {
@@ -102,6 +103,7 @@
     padding: 10px 15px 10px 15px;
     font-size: larger;
     font-weight: 500;
+    /* margin: 20px; */
 }
 
 .movingInfoImageContainer {
@@ -182,34 +184,7 @@
 }
 
 
-/* Logo Slider */
-.logoTitleContainer {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-}
-
-.logoTitle {
-    font-size: 35px;
-    margin: 20px;
-}
-/* Comment this out to show slider if needed */
-.logosSlider {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-
-.logoSlide>img {
-    max-width: 150px;
-}
-
-.logoSlide {
-    height: 120px;
-} 
+ 
 
 /* Smaller than 900px */
 @media only screen and (max-width: 900px) {
@@ -227,6 +202,11 @@
         display: contents;
         max-width: 100px;
         height: auto;
+    }
+
+    .movingInfoButtonContainer{
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .movingInfoButtonContainer{
