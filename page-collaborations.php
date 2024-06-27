@@ -9,10 +9,10 @@ get_header();
 <!-- Intro part of page -->
 <div class="introContainer">
     <div>
-        <h1 class="introHeading"><span class="highlight">More</span> than just furniture rental</h1>
+        <h1 class="introHeading">Co-create with <span class="highlight">Cohabit</span> </h1>
     </div>
     <div>
-        <p class="introText">Cohabit aims to work with housing companies to provide tenants with a sustainable and convenient living experience.</p>
+        <p class="introText">Cohabit aims to work with housing companies to provide tenants with a sustainable living experience.</p>
     </div>
     <div class="introButtonContainer">
         <a href="" class="introButton">Work with Cohabit</a>
@@ -54,11 +54,11 @@ get_header();
         </div>
         <div>
             <div class="companyQuoteContainer">
-                <p class="companyQuote">”Cohabit’s environment-friendly solution is ideal for our tenants looking for a sustainable, affordable, and convenient way to rent furniture during their stay in Malmö.”</p>
+                <p class="companyQuote">”Cohabit is ideal for our tenants looking for a sustainable, affordable, and convenient way to rent furniture during their stay in Malmö.”</p>
             </div>
            <div class="reviewInfoContainer">
-                <p>Peter Johannson</p>
-                <p>Facility Manager of Heimstaden Studenthus</p>
+                <p>Peter Johannson - Facility Manager of Heimstaden Studenthus</p>
+                <!-- <p> </p> -->
            </div>
            <div class="companyLogoContainer">
                 <img src="<?php echo get_theme_file_uri( 'assets/images/logos/8.png' ); ?>" alt="">
@@ -68,7 +68,7 @@ get_header();
 </div>
 
 <!-- Contact Form -->
-<div class="contactContainer">
+<!-- <div class="contactContainer">
     <div class="contactInfoContainer">
         <div>
             <h2 class="contactInfoHeading">Co-create with <span class="companyHighlight">Cohabit</span></h2>
@@ -80,10 +80,10 @@ get_header();
             <h3 class="contactFormTitle">Get started here</h3>
         </div>
         <div>
-            <?php echo do_shortcode('[wpforms id="113"]'); ?>
+            
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- Cohabit News Slider -->
 <div>

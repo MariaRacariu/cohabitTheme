@@ -14,7 +14,7 @@
 }
 
 .highlight {
-    color: #DFB447;
+    color: #63C2C9;
 }
 
 .introText {
@@ -63,6 +63,7 @@
     margin-top: 100px;
     box-shadow: 10px 4px 40px #aeaeae;
     padding: 20px;
+    margin-bottom: 100px;
 }
 
 .companyReviewContainer{
@@ -96,6 +97,7 @@
 
 .reviewInfoContainer >p{
     margin: 10px;
+    font-weight: 500;
 }
 
 .companyLogoContainer{
@@ -235,6 +237,7 @@
 .newsSectionHeading{
     font-size: 30px;
     padding-left: 50px;
+    margin-bottom: 0px;
 }
 
 .newsContentContainer{
