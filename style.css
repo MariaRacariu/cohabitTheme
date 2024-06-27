@@ -149,11 +149,23 @@ body {
     text-decoration: underline;
 }
 
+.cohabitFooterNavContainer > li > a{
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .footerDivider{
     color: rgb(110, 192, 200);
     width: 90%;
 }
 
+.navMenusContainer{
+    display: flex;
+}
+
+.navMenusContainer > div {
+    padding: 20px 40px 20px 40px;
+}
 /* Logos */
 
 .logosSlider {
@@ -171,6 +183,7 @@ body {
 .logoSlide>img {
     max-width: 150px;
     padding: 10px;
+    /* filter:grayscale(60%); */
 }
 
 .logoSlide {
@@ -237,5 +250,9 @@ body {
     .footerInfoContainer{
         flex-direction: column-reverse;
         text-align: center;
+    }
+
+    .navMenusContainer{
+        flex-direction: column;
     }
 }
