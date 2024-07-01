@@ -1,16 +1,11 @@
-.contactFormContainer{
-    width: 50%;
-    padding-left: 50px;
-}
-
 .mainContainer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.contactInfoContainer{
-  
+.contactFormContainer{
+    margin: auto;
+    width: 50%;
+    padding-left: 50px;
 }
 
 .introHeading{
@@ -24,7 +19,8 @@
 .formLinks{
     display: flex;
     align-items: center;
-    column-gap: 10px;
+    column-gap: 5px;
+    row-gap: 10px;
     text-decoration: none;
     font-size: 18px;
 }
@@ -32,25 +28,28 @@
 .linkText:hover{
     text-decoration: underline;
 }
-
-.linksContainer{
-    /* max-width: fit-content; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
 .secondFont{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
 
+.contactImage{
+    max-width: 600px;
+    height: auto;
+}
+
+.contactImageContainer{
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.phoneContactInfo{
+    margin-top: 0px;
+}
+
 @media only screen and (min-width: 1242px) {
-    /* .footerContainer{
-        position: fixed;
-    } */
+
 }
 
 @media only screen and (max-width: 1156px){
@@ -59,15 +58,6 @@
         padding-left: 0px;
     }
 
-    .contactInfoContainer{
-        padding-right: 0px;
-    }
-
-    .mainContainer{
-        justify-content: center;
-        flex-direction: column-reverse;
-        padding-left: 20px;
-    }
     .messageInput{
        width: 100% !important;
     }

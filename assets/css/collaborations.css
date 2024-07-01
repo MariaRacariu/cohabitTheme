@@ -201,7 +201,7 @@
 
 .newsImageContainer > img {
     max-width: 400px;
-    width: auto;
+    min-width: 300px;
     height: 300px;
     object-fit: contain;
 }
@@ -235,13 +235,17 @@
 }
 
 .newsSectionHeading{
-    font-size: 30px;
+    font-size: 35px;
     padding-left: 50px;
     margin-bottom: 0px;
 }
 
 .newsContentContainer{
     line-height: 25px;
+}
+
+.newsContentContainer > p {
+    min-height: 80px;
 }
 
 .newsCardDate{
@@ -257,32 +261,3 @@
     padding: 10px 15px 10px 15px;
 
 }
-
-/* Logo Slider */
-.logoTitleContainer {
-    margin-top: 50px;
-    width: 100%;
-    text-align: center;
-}
-
-.logoTitle {
-    font-size: 35px;
-    margin: 20px;
-}
-/* Comment this out to show slider if needed */
-.logosSlider {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-
-.logoSlide>img {
-    max-width: 250px;
-}
-
-.logoSlide {
-    height: 120px;
-} 

@@ -15,7 +15,7 @@ get_header();
         <p class="introText">Cohabit aims to work with housing companies to provide tenants with a sustainable living experience.</p>
     </div>
     <div class="introButtonContainer">
-        <a href="" class="introButton">Work with Cohabit</a>
+        <a href="http://localhost/cohabit/contact/" class="introButton">Work with Cohabit</a>
     </div>
 </div>
 
