@@ -5,6 +5,10 @@ const cohabitLogo = document.querySelector("#cohabitLogoContainer");
 const navFlexContainer = document.querySelector("#cohabitContainer");
 const bodyElement = document.body;
 
+// Get dropdown icons for Mobile navigation
+const dropdownIcons = document.querySelectorAll(".navElement");
+
+
 menuIconOpen.addEventListener("click", function () {
     console.log("Menu Open");
 
@@ -49,11 +53,20 @@ menuIconClose.addEventListener("click", function () {
     cohabitLogo.style.height = "";
 });
 
-// Navigation Dropdown Temp
-// const dropdown = document.querySelector('.sub-menu');
-// const navItem = document.querySelector('#menu-item-29');
+// dropdownIcons.addEventListener("click", function(){
+    
+// })
 
-// navItem.addEventListener("mouseover", () => {
-//     dropdown.style.display = 'block';
-//     console.log("Hello");
-// });
+// if (window.innerWidth <= 900) {
+//     var test = document.getElementsByClassName("navElement").firstChild;
+
+//     // for (var i = 0; i < navElement.length; i++) {
+//     //     console.log(navElement[i]);
+//     //     // child.removeAttribute("href");
+//     // }
+
+//     test.forEach(element => {
+//         console.log(element);
+//     });
+    
+// }
