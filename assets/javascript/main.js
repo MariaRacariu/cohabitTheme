@@ -62,17 +62,3 @@ $(document).ready(function(){
     });
 });
 
-// Logo Slider using Slick
-// $(document).ready(function(){
-//     $('.logosSlider').slick({
-//         dots: false,
-//         infinite: true, 
-//         slidesToShow: 6,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         autoplaySpeed: 1000,
-//         cssEase: 'ease-in',
-//         adaptiveHeight: true,
-//         arrows: false,
-//     })
-// });
