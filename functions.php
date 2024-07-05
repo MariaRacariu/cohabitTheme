@@ -285,4 +285,24 @@ function create_cohabitnews_cpt() {
 }
 add_action( 'init', 'create_cohabitnews_cpt', 0 );
 
-?>
+
+
+// Testing Contact Image Customize
+
+function cohabit_edit($wp_customize){
+	$wp_customize->add_section('cohabit-contact-image-section', array(
+		'title' => "Contact Image",
+	));
+
+	$wp_customize->add_setting('cohabit-contact-image', array(
+		'transport' => 'refresh',
+	));
+
+	$wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'cohabit-contact-image-control', array(
+		'label' => 'Image',
+		'section' => 'cohabit-contact-image-section',
+		'settings' => 'cohabit-contact-image',
+	)));
+}
+
+add_action('customize_register', 'cohabit_edit');
