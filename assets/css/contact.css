@@ -12,7 +12,7 @@
     font-size: 30px;
 }
 
-.messageInput{
+.messageInput, .contactFormContainer > p{
     width: 60% !important;
 }
 
@@ -48,9 +48,6 @@
     margin-top: 0px;
 }
 
-@media only screen and (min-width: 1242px) {
-
-}
 
 @media only screen and (max-width: 1156px){
     .contactFormContainer{
@@ -58,13 +55,19 @@
         padding-left: 0px;
     }
 
-    .messageInput{
-       width: 100% !important;
+    .messageInput, .contactFormContainer > p{
+       width: 60% !important;
     }
+
+    .contactImageContainer{
+        display: none;
+        width: 0px;
+    }
+
 }
 
-@media only screen and (min-width: 600px) {
-    .messageInput{
-        width: 70% !important;
+@media only screen and (max-width: 600px) {
+    .messageInput, .contactFormContainer > p{
+        width: 100% !important;
     }
 }

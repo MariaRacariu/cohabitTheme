@@ -9,7 +9,7 @@ get_header();
     <div class="mainContainer">
         <div class="contactFormContainer">
             <h2 class="introHeading">Get in touch with us</h2>
-            <p>amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+            <p>Have any questions about the process? Either fill out the form or contact us using email or phone number.</p>
             <?php echo do_shortcode('[wpforms id="90"]'); ?>
             <div class="linksContainer">
                 <div>
