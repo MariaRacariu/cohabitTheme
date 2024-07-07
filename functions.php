@@ -302,6 +302,9 @@ function cohabit_edit($wp_customize){
 		'label' => 'Image',
 		'section' => 'cohabit-contact-image-section',
 		'settings' => 'cohabit-contact-image',
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
 	)));
 }
 
