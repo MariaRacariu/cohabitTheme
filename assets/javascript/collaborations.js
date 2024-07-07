@@ -40,7 +40,6 @@ $(document).ready(function(){
         swipe: true,
         swipeToSlide: true,
         adaptiveHeight: true,
-        centerMode: false,
         arrows: true,
         responsive: [
             {

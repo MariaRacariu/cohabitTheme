@@ -112,6 +112,10 @@
     align-items: center;
 }
 
+.slide > p{
+    padding: 0px 20px 0px 20px;
+}
+
 /* Customer Reviews */
 
 .customerReviewsTitle{
@@ -229,5 +233,9 @@
     .userInfoContainer {
         flex-direction: column;
         text-align: center;
+    }
+
+    .customerReviewsContainer{
+        height: auto;
     }
 }
