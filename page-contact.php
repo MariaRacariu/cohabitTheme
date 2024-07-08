@@ -23,7 +23,7 @@ get_header();
         </div>
         <div class="contactImageContainer">
             <div>            
-                <img src="<?php echo get_theme_file_uri( 'assets/images/contactPageImage.jpg' ); ?>"" alt="" class="contactImage">
+                <img src="<?php echo esc_url(get_theme_mod('cohabit-contact-image')); ?>" class="contactImage">
             </div>
         </div>
     </div>
