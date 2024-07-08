@@ -1,14 +1,71 @@
-<?php
-// Main template file
+<?php get_header(); ?>
 
-get_header(); 
-get_template_part('template-parts/frontPageHero');
-get_template_part('template-parts/frontPageUSP');
-get_template_part('template-parts/frontPageMovingInfo');
-?>
+<!-- ////////////////////  Intro Section Homepage  //////////////////// -->
+<div class="heroContainer">
+    <div>
+        <h1 class="heroHeading"><?php echo get_theme_mod('cohabit-intro-heading'); ?></h1>
+    </div>
+    <div>
+        <p class="heroText"><?php echo get_theme_mod('cohabit-intro-text'); ?></p>
+    </div>
+    <div class="heroButtonContainer">
+        <a class="heroButton" href="<?php echo get_theme_mod('cohabit-intro-button-link'); ?>"><?php echo get_theme_mod('cohabit-intro-button-text'); ?></a>
+    </div>  
+</div>
+
+<!-- ////////////////////  USPs Section Homepage  //////////////////// -->
+<div class="uspsSliderContainer">
+    <div class="uspsSlider">
+        <div class="slide">
+            <div class="imageContainer">
+                <img src="<?php echo esc_url(get_theme_mod('cohabit-usps-slideOne-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-usps-slideOne-image')),'_wp_attachment_image_alt', true) ?>" class="sliderImage">
+            </div>
+            <h2><?php echo get_theme_mod('cohabit-usps-imageOne-heading'); ?></h2>
+            <p><?php echo get_theme_mod('cohabit-usps-imageOne-text'); ?></p>
+        </div>
+        <div class="slide">
+            <div class="imageContainer">
+                <img src="<?php echo esc_url(get_theme_mod('cohabit-usps-slideTwo-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-usps-slideTwo-image')),'_wp_attachment_image_alt', true) ?>" class="sliderImage">
+            </div>
+            <h2><?php echo get_theme_mod('cohabit-usps-imageTwo-heading'); ?></h2>
+            <p><?php echo get_theme_mod('cohabit-usps-imageTwo-text'); ?></p>
+        </div>
+        <div class="slide">
+            <div class="imageContainer">
+                <img src="<?php echo esc_url(get_theme_mod('cohabit-usps-slideThree-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-usps-slideThree-image')),'_wp_attachment_image_alt', true) ?>" class="sliderImage">
+            </div>
+            <h2><?php echo get_theme_mod('cohabit-usps-imageThree-heading'); ?></h2>
+            <p><?php echo get_theme_mod('cohabit-usps-imageThree-text'); ?></p>
+        </div>
+    </div>
+</div>
+
+<!-- ////////////////////  Moving in Section Homepage  //////////////////// -->
+<div class="movingInfoShadow">
+    <div class="movingInfoContainer">
+        <div class="movingInfoTextContainer">
+            <div>
+                <div>
+                    <h2 class="movingInfoHeading"><?php echo get_theme_mod('cohabit-post-info-heading'); ?></h2>
+                    <div class="movingInfoParagraph">
+                        <?php echo wpautop(get_theme_mod('cohabit-post-info-text')); ?>
+                    </div>
+                </div>
+                <div class="movingInfoButtonContainer">
+                    <a href="<?php echo get_theme_mod('cohabit-post-info-button-link'); ?>" class="movingInfoButton"><?php echo get_theme_mod('cohabit-post-info-button-name'); ?></a>
+                </div>
+            </div>
+        </div>
+        <div class="movingInfoImageContainer">
+            <img src="<?php echo esc_url(get_theme_mod('cohabit-post-info-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-usps-slideOne-image')),'_wp_attachment_image_alt', true) ?>">
+        </div>
+    </div>
+</div>
+
+<!-- ////////////////////  Customer Reviews Section Homepage  //////////////////// -->
 <div class="customerReviewsContainer">
     <div>
-        <h3 class="customerReviewsTitle">What our customers say</h3>
+        <h3 class="customerReviewsTitle"><?php echo get_theme_mod('cohabit-customer-reviews-heading'); ?></h3>
     </div>
 
     <div class="sliderContainer">
@@ -73,11 +130,7 @@ get_template_part('template-parts/frontPageMovingInfo');
         }
         ?>
         </div>
-        
     </div>
 </div>
 
-<?php
-get_footer(); 
-
-?>
+<?php get_footer(); ?>
