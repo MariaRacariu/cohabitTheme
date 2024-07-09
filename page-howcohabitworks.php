@@ -1,18 +1,14 @@
-<?php
-/*
-Template Name: Custom Template for How Cohabit Works
-*/
+<?php get_header(); ?>
 
-get_header(); 
-?>
-
+<!-- ////////////////////  Hero Section How cohabit works  //////////////////// -->
 <div class="introContainer">
-    <h1 class="introHeading">How <span class="introHighlight">Cohabit</span> Works</h1>
-    <img src="<?php echo get_theme_file_uri( 'assets/images/howCohabitWorks.png' ); ?>" alt="" class="introImage">
+    <h1 class="introHeading"><?php echo get_theme_mod('cohabit-hcw-hero-heading'); ?></h1>
+    <img src="<?php echo esc_url(get_theme_mod('cohabit-hcw-hero-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-hcw-hero-image')),'_wp_attachment_image_alt', true) ?>" class="introImage">
 </div>
 
-<!-- Step One -->
+<!-- ////////////////////  Steps Section How cohabit works  //////////////////// -->
 <div class="stepsContainer">
+    <!-- Step One -->
     <div class="stepContainer">
         <div class="imageContainer"><img src="<?php echo get_theme_file_uri( 'assets/images/howCohabitWorksStep1.png' ); ?>" alt="" class="stepImage"></div>
         <div class="stepTextContainer">
@@ -60,7 +56,7 @@ get_header();
     </div>
 </div>
 
-
+<!-- ////////////////////  FAQ Section How cohabit works  //////////////////// -->
 <div class="faqAllContainer" id="faq">
     <h2 class="faqTitle">FAQ</h2>
     <div>
@@ -229,7 +225,5 @@ get_header();
         </div>
     </div>
 </div>
-<?php
-get_footer(); 
-?>
 
+<?php get_footer(); ?>
