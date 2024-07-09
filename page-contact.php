@@ -8,16 +8,17 @@ get_header();
 <div>
     <div class="mainContainer">
         <div class="contactFormContainer">
-            <h2 class="introHeading">Get in touch with us</h2>
-            <p>Have any questions about the process? Either fill out the form or contact us using email or phone number.</p>
-            <?php echo do_shortcode('[wpforms id="90"]'); ?>
+            <h2 class="introHeading"><?php echo get_theme_mod('cohabit-contact-form-heading'); ?></h2>
+            <?php echo wpautop(get_theme_mod('cohabit-contact-form-text')); ?>
+
+            <?php echo do_shortcode(get_theme_mod('cohabit-contact-form-id')); ?>
             <div class="linksContainer">
                 <div>
-                    <a href="mailto:hello@cohabit.se" class="formLinks"><i class="fa-solid fa-envelope fa-xl"></i><p class="linkText secondFont">hello@cohabit.se</p></a>
+                    <a href="mailto:<?php echo get_theme_mod('cohabit-contact-info-email'); ?>" class="formLinks"><i class="<?php echo get_theme_mod('cohabit-contact-info-email-icon'); ?>"></i><p class="linkText secondFont"><?php echo get_theme_mod('cohabit-contact-info-email'); ?></p></a>
                 </div>
                 <div>
-                    <a href="tel:+46 7123 456 487" class="formLinks"><i class="fa-solid fa-phone fa-xl"></i><p class="linkText secondFont">07123 456 487</p></a>
-                    <p class="phoneContactInfo">Mon-Fri 08.00 - 17.00 CET</p>
+                    <a href="tel:<?php echo get_theme_mod('cohabit-contact-info-phone'); ?>" class="formLinks"><i class="<?php echo get_theme_mod('cohabit-contact-info-phone-icon'); ?>"></i><p class="linkText secondFont"><?php echo get_theme_mod('cohabit-contact-info-phone'); ?></p></a>
+                    <p class="phoneContactInfo"><?php echo get_theme_mod('cohabit-contact-info-text'); ?></p>
                 </div>
             </div>
         </div>

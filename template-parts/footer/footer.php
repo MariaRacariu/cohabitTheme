@@ -38,7 +38,6 @@
     </div>
     <div class="footerNavigationContainer">
         <div>
-            <!-- Support Navigation -->
             <div class="footerNavigationItems">
                 <p class="copyrightText">© 2024 Cohabit. All Rights Reserved</p>
                 <?php
@@ -54,9 +53,9 @@
         </div>
         <div>
             <div class="footerIconsContainer">
-                <a href="https://www.facebook.com/cohabit.se"><i class="fa-brands fa-facebook fa-xl"></i></a>
-                <a href="https://www.instagram.com/cohabit.se/"><i class="fa-brands fa-instagram fa-xl"></i></a>
-                <a href="https://www.linkedin.com/company/cohabit-se/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href="<?php echo get_theme_mod('cohabit-social-media-linkOne-text'); ?>"><i class="<?php echo get_theme_mod('cohabit-social-media-iconOne-icon'); ?>"></i></a>
+                <a href="<?php echo get_theme_mod('cohabit-social-media-linkTwo-text'); ?>"><i class="<?php echo get_theme_mod('cohabit-social-media-iconTwo-icon'); ?>"></i></a>
+                <a href="<?php echo get_theme_mod('cohabit-social-media-linkThree-text'); ?>"><i class="<?php echo get_theme_mod('cohabit-social-media-iconThree-icon'); ?>"></i></a>
             </div> 
         </div>
     </div>

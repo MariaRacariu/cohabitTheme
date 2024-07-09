@@ -1,11 +1,6 @@
-<?php
-/*
-Template Name: Custom Template for How Cohabit Works
-*/
+<?php get_header(); ?>
 
-get_header(); 
-?>
-
+<!-- ////////////////////  Intro Section About  //////////////////// -->
 <div class="introContainer" id="drivingCircularity">
     <div class="introWrapper">
         <div class="leftWrapper">
@@ -15,10 +10,7 @@ get_header();
                 <p>According to the statistics from the European Federation of Furniture Manufacturers (UEA), around 80% to 90% of the EU furniture waste in the municipal solid waste stream is incinerated or sent to a landfill and only less than 10% are recycled.</p>
                 <p>The environmental impact of “fast furniture” is significant and calls for a change in consumer behavior to address this (seemingly) overlooked concern.</p>
                 <div class="introLinkButtonWrapper">
-                    <a href="https://www.furn360.eu/wp-content/uploads/2018/10/Circular-economy-in-the-furniture-industry-11092018.pdf" class="linkButton" target="_blank">
-                        Circular economy in the furniture industry
-                        <img src="<?php echo get_theme_file_uri( 'assets/images/linkArrow.svg' ); ?>" alt="" class="linkArrowIcon">
-                    </a>
+                    <a href="https://www.furn360.eu/wp-content/uploads/2018/10/Circular-economy-in-the-furniture-industry-11092018.pdf" class="linkButton" target="_blank">Read more</a>
                 </div>
             </div>
             <div class="faqAllContainer">
@@ -59,7 +51,7 @@ get_header();
 </div>
 
 
-
+<!-- ////////////////////  Sustainability Report Section About  //////////////////// -->
 <div class="reportContainer" id="sustainabilityReport">
     <div class="reportWrapper">
         <div class="reportImageContainer">
@@ -68,17 +60,16 @@ get_header();
         <div class="reportTextContainer">
             <h2>Cohabit AB 2023 Sustainability Report</h2>
             <p>We are excited to share our 2023 Sustainability Report, which reflects our dedication towards sustainability and circularity in the furniture industry. As we continue to navigate the challenges ahead, we’re grateful to have you alongside us on this journey!</p>
-            <div class="reportLinks">
-                <a href="http://cohabit.se/wp-content/uploads/2024/05/Cohabit-Sustainability-Report-2023.pdf">Read now</a>
-                <a href="https://www.linkedin.com/posts/cohabit-se_cohabit-sustainability-report-2022-activity-7056266286011420672-7su3/?utm_source=share&utm_medium=member_ios">2022 Cohabit Sustainability Report</a>
+            <a href="http://cohabit.se/wp-content/uploads/2024/05/Cohabit-Sustainability-Report-2023.pdf" class="tealButton">Read now</a>
+            <div class="historyOfReportsContainer">
+                <h3>Previous Reports</h3>
+                <a href="https://www.linkedin.com/posts/cohabit-se_cohabit-sustainability-report-2022-activity-7056266286011420672-7su3/?utm_source=share&utm_medium=member_ios">2022 Sustainability Report</a>
             </div>
         </div>
     </div>
 </div>
 
-
-
-
+<!-- ////////////////////  Time Line Slider Section About  //////////////////// -->
 <div class="timelineSliderContainer">
     <div>
         <div class="timelineSliderHeading">
@@ -176,7 +167,7 @@ get_header();
                 </div>
             </div>
         </div>
-        <!-- This will be the progress bar that will load -->
+        <!-- Progress bar -->
         <div class="progressBarContainer">
             <div class="slider-progress">
                 <span></span>
@@ -185,6 +176,7 @@ get_header();
      </div>
 </div>
 
+<!-- ////////////////////  Our Story Section About  //////////////////// -->
 <div class="ourStoryContainer" id="ourStory">
     <div>
         <h2 class="ourStoryHeading">Our Story</h2>
@@ -205,6 +197,5 @@ get_header();
         </div>
     </div>
 </div>
-<?php
-get_footer(); 
-?>
+
+<?php get_footer(); ?>

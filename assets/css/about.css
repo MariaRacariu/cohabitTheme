@@ -81,7 +81,6 @@
 }
 
 .imageContainer {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +162,7 @@
     flex-direction: column;
     row-gap: 40px;
 }
-.reportLinks > a{
+.tealButton{
     text-decoration: none;
     background-color: #63C2C9;
     border: none;
@@ -172,6 +171,24 @@
     font-size: larger;
     font-weight: 400;
     max-width: fit-content;
+}
+
+.historyOfReportsContainer{
+    padding-top: 50px;
+}
+
+.historyOfReportsContainer a{
+    text-decoration: none;
+    border: solid #1E1E1E 2px;
+    border-radius: 25px;
+    padding: 10px 15px 10px 15px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.historyOfReportsContainer > h3{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,12 +1,6 @@
-<?php
-/*
-Template Name: Custom Template for How Cohabit Works
-*/
+<?php get_header(); ?>
 
-get_header(); 
-?>
-
-<!-- Intro part of page -->
+<!-- ////////////////////  Intro Section Collaborations  //////////////////// -->
 <div class="introContainer">
     <div>
         <h1 class="introHeading">Co-create with <span class="highlight">Cohabit</span> </h1>
@@ -19,7 +13,7 @@ get_header();
     </div>
 </div>
 
-<!-- USPs Slider -->
+<!-- ////////////////////  USPs Section Collaborations  //////////////////// -->
 <div class="sliderContainer">
     <div class="collaborationsSlider">
         <div>
@@ -46,7 +40,7 @@ get_header();
     </div>
 </div>
 
-<!-- Company Review -->
+<!-- ////////////////////  Company Review Section Collaborations  //////////////////// -->
 <div class="quoteContainer">
     <div class="companyReviewContainer">
         <div>
@@ -58,7 +52,6 @@ get_header();
             </div>
            <div class="reviewInfoContainer">
                 <p>Peter Johannson - Facility Manager of Heimstaden Studenthus</p>
-                <!-- <p> </p> -->
            </div>
            <div class="companyLogoContainer">
                 <img src="<?php echo get_theme_file_uri( 'assets/images/logos/8.png' ); ?>" alt="">
@@ -67,25 +60,7 @@ get_header();
     </div>
 </div>
 
-<!-- Contact Form -->
-<!-- <div class="contactContainer">
-    <div class="contactInfoContainer">
-        <div>
-            <h2 class="contactInfoHeading">Co-create with <span class="companyHighlight">Cohabit</span></h2>
-            <p class="contactInfoText">Get in touch with us and lets work towards a sustainable future</p>
-        </div>
-    </div>
-    <div class="contactFormContainer">
-        <div>
-            <h3 class="contactFormTitle">Get started here</h3>
-        </div>
-        <div>
-            
-        </div>
-    </div>
-</div> -->
-
-<!-- Cohabit News Slider -->
+<!-- //////////////////// Cohabit News Slider Section Collaborations  //////////////////// -->
 <div>
     <div class="newsContainer">
         <div>
@@ -118,8 +93,4 @@ get_header();
     </div>
 </div>
 
-<!-- Company Logos Slider -->
- <?php get_template_part('template-parts/colaboratorsList'); ?>
-<?php
-get_footer(); 
-?>
+<?php get_footer(); ?>

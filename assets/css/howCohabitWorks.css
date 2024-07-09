@@ -54,14 +54,11 @@
 }
 
 .faqHeadingContainer {
-    border-radius: 40px;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
-    border: #1E1E1E 2px solid;
     padding: 5px 20px 5px 20px;
 }
-
 
 .faqAllContainer {
     width: 100%;
@@ -72,6 +69,8 @@
 
 .faqSectionButton {
     margin: 0px 50px 0px 50px;
+    border: #1E1E1E 2px solid;
+    border-radius: 40px;
 }
 
 .faqHeadingContainer>h3 {
@@ -79,11 +78,6 @@
     font-weight: 400;
     margin-left: 15px;
 }
-
-/* .faqHeadingContainer>img {
-    width: 30px;
-    height: 20px;
-} */
 
 .faqQAContainer {
     display: none;

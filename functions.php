@@ -285,6 +285,64 @@ function create_cohabitnews_cpt() {
 }
 add_action( 'init', 'create_cohabitnews_cpt', 0 );
 
+// Register Custom Post Type FAQ
+function create_faq_cpt() {
+
+	$labels = array(
+		'name' => _x( 'FAQs', 'Post Type General Name', 'textdomain' ),
+		'singular_name' => _x( 'FAQ', 'Post Type Singular Name', 'textdomain' ),
+		'menu_name' => _x( 'FAQs', 'Admin Menu text', 'textdomain' ),
+		'name_admin_bar' => _x( 'FAQ', 'Add New on Toolbar', 'textdomain' ),
+		'archives' => __( 'FAQ Archives', 'textdomain' ),
+		'attributes' => __( 'FAQ Attributes', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent FAQ:', 'textdomain' ),
+		'all_items' => __( 'All Custom Posts', 'textdomain' ),
+		'add_new_item' => __( 'Add New FAQ', 'textdomain' ),
+		'add_new' => __( 'Add New', 'textdomain' ),
+		'new_item' => __( 'New FAQ', 'textdomain' ),
+		'edit_item' => __( 'Edit FAQ', 'textdomain' ),
+		'update_item' => __( 'Update FAQ', 'textdomain' ),
+		'view_item' => __( 'View FAQ', 'textdomain' ),
+		'view_items' => __( 'View Custom Posts', 'textdomain' ),
+		'search_items' => __( 'Search FAQ', 'textdomain' ),
+		'not_found' => __( 'Not found', 'textdomain' ),
+		'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+		'featured_image' => __( 'Featured Image', 'textdomain' ),
+		'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+		'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+		'insert_into_item' => __( 'Insert into FAQ', 'textdomain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this FAQ', 'textdomain' ),
+		'items_list' => __( 'Custom Posts list', 'textdomain' ),
+		'items_list_navigation' => __( 'Custom Posts list navigation', 'textdomain' ),
+		'filter_items_list' => __( 'Filter Custom Posts list', 'textdomain' ),
+	);
+	$args = array(
+		'label' => __( 'FAQ', 'textdomain' ),
+		'description' => __( 'Frequently asked questions', 'textdomain' ),
+		'labels' => $labels,
+		'menu_icon' => '',
+		'supports' => array('title', 'editor', 'custom-fields'),
+		'taxonomies' => array(),
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'menu_position' => 5,
+		'show_in_admin_bar' => true,
+		'show_in_nav_menus' => true,
+		'can_export' => true,
+		'has_archive' => true,
+		'hierarchical' => true,
+		'exclude_from_search' => true,
+		'show_in_rest' => true,
+		'publicly_queryable' => true,
+		'capability_type' => 'post',
+	);
+	register_post_type( 'faq', $args );
+
+}
+add_action( 'init', 'create_faq_cpt', 0 );
+
 
 
 // Customize page
@@ -796,20 +854,6 @@ function cohabit_edit($wp_customize){
 		'panel' => "cohabit-hcw-steps-panel",
 	));
 
-	// Step 5 Image
-	$wp_customize->add_setting('cohabit-hcw-stepFive-image', array(
-		'transport' => 'refresh',
-	));
-
-	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'cohabit-hcw-stepFive-image-control', array(
-		'label' => "Image",
-		'section' => "cohabit-hcw-stepFive-section",
-		'settings' => "cohabit-hcw-stepFive-image",
-		'active_callback' => function(){
-			return is_page('How Cohabit Works');
-		}
-	)));
-
 	// Step 5 Heading
 	$wp_customize->add_setting('cohabit-hcw-stepFive-heading');
 
@@ -835,14 +879,77 @@ function cohabit_edit($wp_customize){
 		}
 	)));
 
-
-
-	// -------------- Contact Section --------------
-	$wp_customize->add_section('cohabit-contact-image-section', array(
-		'title' => "Contact Image",
+	// -------------- FAQ Section --------------
+	$wp_customize->add_section('cohabit-faq-section', array(
+		'title' => "FAQ (Cohabit)"
 	));
 
-	// Contact Image
+	// Title
+	$wp_customize->add_setting('cohabit-faq-heading');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-faq-heading-control', array(
+		'label' => "Title",
+		'section' => "cohabit-faq-section",
+		'settings' => "cohabit-faq-heading",
+		'active_callback' => function(){
+			return is_page('How Cohabit Works');
+		}
+	)));
+
+	////////////////////  Contact Page  ////////////////////
+	$wp_customize->add_panel('cohabit-contact-page-panel', array(
+		'title' => "Contact (Cohabit)",
+	));
+	
+	// -------------- Contact form Section --------------
+	$wp_customize->add_section('cohabit-contact-form-section', array(
+		'title' => "Contact Form",
+		'panel' => "cohabit-contact-page-panel"
+	));
+
+	// Contact form title
+	$wp_customize->add_setting('cohabit-contact-form-heading');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-contact-form-heading-control', array(
+		'label' => "Contact form Title",
+		'section' => "cohabit-contact-form-section",
+		'settings' => "cohabit-contact-form-heading",
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
+	)));
+
+	// Contact form text
+	$wp_customize->add_setting('cohabit-contact-form-text');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-contact-form-text-control', array(
+		'label' => "Contact form Text",
+		'section' => "cohabit-contact-form-section",
+		'settings' => "cohabit-contact-form-text",
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
+	)));
+
+	// Contact form
+
+	$wp_customize->add_setting('cohabit-contact-form-id');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-contact-form-id-control', array(
+		'label' => "Contact form ID",
+		'section' => "cohabit-contact-form-section",
+		'settings' => "cohabit-contact-form-id",
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
+	)));
+
+	// -------------- Contact Image Section --------------
+	$wp_customize->add_section('cohabit-contact-image-section', array(
+		'title' => "Contact Image",
+		'panel' => "cohabit-contact-page-panel"
+	));
+
 	$wp_customize->add_setting('cohabit-contact-image', array(
 		'transport' => 'refresh',
 	));
@@ -855,6 +962,154 @@ function cohabit_edit($wp_customize){
 			return is_page('Contact');
 		}
 	)));
+
+	// -------------- Contact Information Section --------------
+	$wp_customize->add_section('cohabit-contact-info-section', array(
+		'title' => "Contact Information",
+		'panel' => "cohabit-contact-page-panel"
+	));
+
+	// Email
+	$wp_customize->add_setting('cohabit-contact-info-email');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-contact-info-email-control', array(
+		'label' => "Email",
+		'section' => "cohabit-contact-info-section",
+		'settings' => "cohabit-contact-info-email",
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
+	)));
+
+	// Email icon
+	$wp_customize->add_setting('cohabit-contact-info-email-icon');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-contact-info-email-icon-control', array(
+		'label' => "Email Icon",
+		'section' => "cohabit-contact-info-section",
+		'settings' => "cohabit-contact-info-email-icon",
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
+	)));
+
+	// Phone number
+	$wp_customize->add_setting('cohabit-contact-info-phone');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-contact-info-phone-control', array(
+		'label' => "Phone Number",
+		'section' => "cohabit-contact-info-section",
+		'settings' => "cohabit-contact-info-phone",
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
+	)));
+
+	// Phone Number Icon
+	$wp_customize->add_setting('cohabit-contact-info-phone-icon');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-contact-info-phone-icon-control', array(
+		'label' => "Phone Number Icon",
+		'section' => "cohabit-contact-info-section",
+		'settings' => "cohabit-contact-info-phone-icon",
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
+	)));
+
+	// Information Text
+	$wp_customize->add_setting('cohabit-contact-info-text');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-contact-info-text-control', array(
+		'label' => "Contact info Text",
+		'section' => "cohabit-contact-info-section",
+		'settings' => "cohabit-contact-info-text",
+		'active_callback' => function(){
+			return is_page('Contact');
+		}
+	)));
+
+	////////////////////  Footer  ////////////////////
+
+	$wp_customize->add_panel('cohabit-footer-panel', array(
+		'title' => "Footer (Cohabit)",
+	));
+
+	// -------------- Copyright text Section --------------
+	$wp_customize->add_section('cohabit-footer-copyright-text-section', array(
+		'title' => "Copyright Text",
+		'panel' => "cohabit-footer-panel"
+	));
+
+	// Copyright text
+	$wp_customize->add_setting('cohabit-copyright-text');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-copyright-text-control', array(
+		'label' => "Copyright Text",
+		'section' => "cohabit-footer-copyright-text-section",
+		'settings' => "cohabit-copyright-text",
+	)));
+
+	// -------------- Social media links Section --------------
+	$wp_customize->add_section('cohabit-social-media-links-section', array(
+		'title' => "Social media links",
+		'panel' => "cohabit-footer-panel"
+	));
+
+	// Social media link 1
+	$wp_customize->add_setting('cohabit-social-media-linkOne-text');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-social-media-linkOne-text-control', array(
+		'label' => "Social media Link 1",
+		'section' => "cohabit-social-media-links-section",
+		'settings' => "cohabit-social-media-linkOne-text",
+	)));
+
+	// Social media icon 1
+	$wp_customize->add_setting('cohabit-social-media-iconOne-icon');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-social-media-iconOne-text-control', array(
+		'label' => "Social media Icon 1",
+		'section' => "cohabit-social-media-links-section",
+		'settings' => "cohabit-social-media-iconOne-icon",
+	)));
+
+	// Social media link 2
+	$wp_customize->add_setting('cohabit-social-media-linkTwo-text');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-social-media-linkTwo-text-control', array(
+		'label' => "Social media Link 2",
+		'section' => "cohabit-social-media-links-section",
+		'settings' => "cohabit-social-media-linkTwo-text",
+	)));
+
+	// Social media icon 2
+	$wp_customize->add_setting('cohabit-social-media-iconTwo-icon');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-social-media-iconTwo-text-control', array(
+		'label' => "Social media Icon 2",
+		'section' => "cohabit-social-media-links-section",
+		'settings' => "cohabit-social-media-iconTwo-icon",
+	)));
+
+	// Social media link 3
+	$wp_customize->add_setting('cohabit-social-media-linkThree-text');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-social-media-linkThree-text-control', array(
+		'label' => "Social media Link 3",
+		'section' => "cohabit-social-media-links-section",
+		'settings' => "cohabit-social-media-linkThree-text",
+	)));
+
+	// Social media icon 3
+	$wp_customize->add_setting('cohabit-social-media-iconThree-icon');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-social-media-iconThree-text-control', array(
+		'label' => "Social media Icon 3",
+		'section' => "cohabit-social-media-links-section",
+		'settings' => "cohabit-social-media-iconThree-icon",
+	)));
+
 }
 
 add_action('customize_register', 'cohabit_edit');
