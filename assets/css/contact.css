@@ -48,6 +48,9 @@
     margin-top: 0px;
 }
 
+.linksContainer{
+    margin-bottom: 100px;
+}
 
 @media only screen and (max-width: 1156px){
     .contactFormContainer{

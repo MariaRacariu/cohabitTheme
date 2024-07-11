@@ -93,4 +93,5 @@
     </div>
 </div>
 
+<?php include get_theme_file_path('/inc/footer-icons.php'); ?>
 <?php get_footer(); ?>

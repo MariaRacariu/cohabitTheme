@@ -187,7 +187,9 @@
     z-index: 1;
 }
 
-
+.customerReviewsContainer{
+    margin-bottom: 100px;
+}
  
 
 /* Smaller than 900px */

@@ -120,44 +120,6 @@
     }
 }
 
-/* Contact Form */
-.contactContainer{
-    display: flex;
-    margin-top: 100px;
-}
-
-.contactInfoContainer{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.contactInfoHeading{
-    font-size: 50px;
-    width: 350px;
-}
-
-.companyHighlight{
-    color: #63C2C9;
-}
-
-.contactFormContainer{
-    width: 50%;
-}
-
-.contactInfoText{
-    font-size: 25px;
-    width: 400px;
-}
-
-.contactFormTitle{
-    font-size: 25px;
-}
-
-.messageInput{
-    max-width: 60% !important; 
-}
-
 @media only screen and (max-width: 900px) {
     .contactInfoHeading{
         width: 300px;
@@ -256,4 +218,8 @@
     color: black;
     padding: 10px 15px 10px 15px;
 
+}
+
+.newsContainer{
+    margin-bottom: 100px;
 }
