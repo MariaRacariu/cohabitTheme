@@ -3,7 +3,7 @@
     <div class="footerNavigationContainer">
         <div>
             <div class="footerNavigationItems">
-                <p class="copyrightText">© 2024 Cohabit. All Rights Reserved</p>
+                <p class="copyrightText"><?php echo get_theme_mod('cohabit-copyright-text'); ?></p>
                 <?php
                     wp_nav_menu(
                         array(

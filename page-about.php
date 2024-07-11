@@ -5,47 +5,39 @@
     <div class="introWrapper">
         <div class="leftWrapper">
             <div class="textIntroWrapper">
-                <h1 class="introHeading">Driving Circularity: Our Impact</h1>
-                <p>Once thrown out, only a small percentage of furniture is recycled.</p>
-                <p>According to the statistics from the European Federation of Furniture Manufacturers (UEA), around 80% to 90% of the EU furniture waste in the municipal solid waste stream is incinerated or sent to a landfill and only less than 10% are recycled.</p>
-                <p>The environmental impact of “fast furniture” is significant and calls for a change in consumer behavior to address this (seemingly) overlooked concern.</p>
+                <h1 class="introHeading"><?php echo get_theme_mod('cohabit-intro-post-title'); ?></h1>
+                <?php echo wpautop(get_theme_mod('cohabit-intro-post-text')); ?>
                 <div class="introLinkButtonWrapper">
-                    <a href="https://www.furn360.eu/wp-content/uploads/2018/10/Circular-economy-in-the-furniture-industry-11092018.pdf" class="linkButton" target="_blank">Read more</a>
+                    <a href="<?php echo get_theme_mod('cohabit-intro-post-button-link'); ?>" class="linkButton" target="_blank"><?php echo get_theme_mod('cohabit-intro-post-button-title'); ?></a>
                 </div>
             </div>
             <div class="faqAllContainer">
                 <div class="faqSectionButton">
                     <div class="faqHeadingContainer">
-                        <h2>Cohabit's Approach to Circular Sourcing</h2>
-                        <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
+                        <h2><?php echo get_theme_mod('cohabit-intro-post-dropdownOne-title'); ?></h2>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="faqQAContainer">
                         <div>
-                            <p>We’re all about giving pre-loved furniture a fresh start.</p>
-                            <p>Everything begins with recognizing that a lot of good quality and functional furniture sits around in someone’s basement – or, even worse – ends up in the trash because people no longer need it. Even some circular businesses deal with unsold furniture destined for the same fate – and that’s where Cohabit comes in.</p>
-                            <p>Cohabit steps in to find new homes for these items. We collaborate with individuals and various circular businesses to connect these valuable resources with those searching for a more sustainable furniture option. This approach prevents good furniture from becoming waste and retains the value of resources.</p>
+                            <?php echo wpautop(get_theme_mod('cohabit-intro-post-dropdownOne-content')); ?>
                         </div>
                     </div>
                 </div>
                 <div class="faqSectionButton">
                     <div class="faqHeadingContainer">
-                        <h2>Why Choose Pre-loved Furniture?</h2>
-                        <img src="<?php echo get_theme_file_uri( 'assets/images/arrowDown.svg' ); ?>" alt="">
+                        <h2><?php echo get_theme_mod('cohabit-intro-post-dropdownTwo-title'); ?></h2>
+                        <i class="fa-solid fa-chevron-down"></i>
                     </div>
                     <div class="faqQAContainer">
                         <div>
-                            <p>Pre-loved furniture is awesome for a few key reasons:</p>
-                            <p>First, it’s eco-friendly. It’s like giving a high-five to the planet because you’re not using up more resources.</p>
-                            <p>Second, these pieces might have a few little “love marks” – tiny scratches or dents – but that doesn’t stop them from doing their job. Plus, those marks can make them kind of cool and unique.</p>
-                            <p>Lastly, if you’re a student or need furniture for a short time, choosing pre-loved stuff is a smart move. It’s gentle on your wallet and better for our world. So, you save money and help the environment. Double win!</p>
-                            <p>Pre-loved furniture is sustainable, has character, and won’t break the bank – a top choice for anyone looking for affordable, eco-friendly options.</p>
+                            <?php echo wpautop(get_theme_mod('cohabit-intro-post-dropdownTwo-content')); ?>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="imageContainer">
-            <img src="<?php echo get_theme_file_uri( 'assets/images/temp.jpg' ); ?>" alt="" class="aboutIntroImage">
+            <img src="<?php echo esc_url(get_theme_mod('cohabit-intro-post-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-intro-post-image')),'_wp_attachment_image_alt', true) ?>" class="aboutIntroImage">
         </div>
     </div>
 </div>
@@ -55,15 +47,30 @@
 <div class="reportContainer" id="sustainabilityReport">
     <div class="reportWrapper">
         <div class="reportImageContainer">
-            <img src="<?php echo get_theme_file_uri( 'assets/images/report.webp' ); ?>" alt="">
+            <img src="<?php echo esc_url(get_theme_mod('cohabit-report-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-report-image')),'_wp_attachment_image_alt', true) ?>">
         </div>
         <div class="reportTextContainer">
-            <h2>Cohabit AB 2023 Sustainability Report</h2>
-            <p>We are excited to share our 2023 Sustainability Report, which reflects our dedication towards sustainability and circularity in the furniture industry. As we continue to navigate the challenges ahead, we’re grateful to have you alongside us on this journey!</p>
-            <a href="http://cohabit.se/wp-content/uploads/2024/05/Cohabit-Sustainability-Report-2023.pdf" class="tealButton">Read now</a>
+            <h2><?php echo get_theme_mod('cohabit-report-title'); ?></h2>
+            <?php echo wpautop(get_theme_mod('cohabit-report-content')); ?>            
+            <a href="<?php echo get_theme_mod('cohabit-report-button-link'); ?>" class="tealButton"><?php echo get_theme_mod('cohabit-report-button-title'); ?></a>
             <div class="historyOfReportsContainer">
-                <h3>Previous Reports</h3>
-                <a href="https://www.linkedin.com/posts/cohabit-se_cohabit-sustainability-report-2022-activity-7056266286011420672-7su3/?utm_source=share&utm_medium=member_ios">2022 Sustainability Report</a>
+                <h3><?php echo get_theme_mod('cohabit-report-history-title'); ?></h3>
+
+                <?php if(get_theme_mod('cohabit-report-slotOne-display') == "Yes"){ ?>
+                    <a href="<?php echo get_theme_mod('cohabit-report-slotOne-link'); ?>"><?php echo get_theme_mod('cohabit-report-slotOne-title'); ?></a>
+                <?php } ?>
+                
+                <?php if(get_theme_mod('cohabit-report-slotTwo-display') == "Yes"){ ?>
+                    <a href="<?php echo get_theme_mod('cohabit-report-slotTwo-link'); ?>"><?php echo get_theme_mod('cohabit-report-slotTwo-title'); ?></a>
+                <?php } ?>
+
+                <?php if(get_theme_mod('cohabit-report-slotThree-display') == "Yes"){ ?>
+                    <a href="<?php echo get_theme_mod('cohabit-report-slotThree-link'); ?>"><?php echo get_theme_mod('cohabit-report-slotThree-title'); ?></a>
+                <?php } ?>
+
+                <?php if(get_theme_mod('cohabit-report-slotFour-display') == "Yes"){ ?>
+                    <a href="<?php echo get_theme_mod('cohabit-report-slotFour-link'); ?>"><?php echo get_theme_mod('cohabit-report-slotFour-title'); ?></a>
+                <?php } ?>
             </div>
         </div>
     </div>
