@@ -22,9 +22,9 @@ faqSectionButtons.forEach(faqSectionButton => {
 $(document).ready(function(){
     // The sliderTimer is used in the Slick slider to give it auto play time
     var sliderTimer = 5000;
-    var $imageSlider = $('.your-class');
+    var $imageSlider = $('.timeline-slider');
 
-    $('.your-class').slick({
+    $('.timeline-slider').slick({
         autoplay: true,
 		autoplaySpeed: sliderTimer,
 		speed: 1000,

@@ -47,6 +47,11 @@ body {
 }
 
 /* Navigation */
+.pageLogo{
+    max-height: 70px;
+    width: auto;
+}
+
 .cohabitMobileMenuIconContainer,
 .cohabitMenuCloseIcon {
     display: none;

@@ -1,8 +1,8 @@
 <nav class="cohabitNavigationContainer" id="cohabitNavigationContainer">
     <div class="cohabitContainer" id="cohabitContainer">
         <div class="cohabitLogoContainer" id="cohabitLogoContainer">
-            <a href="http://mariaracariu.se/cohabit">
-                <img src="<?php echo get_theme_file_uri( 'assets/images/cohabitLogo.png' ); ?>" alt="">
+            <a href="<?php echo home_url(); ?>">
+                <img src="<?php echo esc_url( wp_get_attachment_url( get_theme_mod( 'custom_logo' ) ) ); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('custom_logo')),'_wp_attachment_image_alt', true) ?>" class="pageLogo">
             </a>
         </div>
         <!-- Need to add ACF to call the mobile menu icon -->

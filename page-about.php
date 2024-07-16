@@ -82,97 +82,47 @@
         <div class="timelineSliderHeading">
             <h2><?php echo get_theme_mod('cohabit-timeline-slider-title'); ?></h2>
         </div>
-        <div class="your-class">
-            <div>
-                <div class="timelineImageContainer">
-                    <div>
-                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image1.jpg' ); ?>" alt="" class="testImage">
-                    </div>
-                </div>
-                <div class="timelineInfoContainer">
-                    <div>
+        <div class="timeline-slider">
+            <?php 
+            $args = array(
+                'post_type' => 'timeline',
+                'order' => 'DEC',
+            );
+
+            $timeline = new WP_Query($args);
+
+            if($timeline -> have_posts()){
+                while($timeline -> have_posts()){
+                    $timeline -> the_post();
+                    ?>
                         <div>
-                            <p>July 2022</p>
+                            <div class="timelineImageContainer">
+                                <div>
+                                    <?php the_post_thumbnail('large', array('class' => 'testImage')); ?>
+                                </div>
+                            </div>
+                            <div class="timelineInfoContainer">
+                                <div>
+                                    <div>
+                                        <?php
+                                         $date_field = get_post_custom();
+                                            
+                                         if(isset($date_field['date'])){
+                                             echo "<p>" . $date_field['date'][0] . "</p>";
+                                         }
+                                        ?>
+                                    </div>
+                                    <div>
+                                        <h3><?php the_title(); ?></h3>
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                            </div>    
                         </div>
-                        <div>
-                            <h3>Pilot Launch</h3>
-                            <p>Cohabit officially launches its pilot in Malmö.</p>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-            <div>
-                <div class="timelineImageContainer">
-                    <div>
-                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image2.jpg' ); ?>" alt="" class="testImage">
-                    </div>
-                </div>
-                <div class="timelineInfoContainer">
-                    <div>
-                        <div>
-                            <p>August 2022</p>
-                        </div>
-                        <div>
-                            <h3>First Customer Arrive</h3>
-                            <p>Cohabit delivers furniture bundles to its first customer in Malmö.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div> 
-                <div class="timelineImageContainer">
-                    <div>                
-                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
-                    </div>
-                </div>
-                <div class="timelineInfoContainer">
-                    <div>
-                        <div>
-                            <p>May 2023</p>
-                        </div>
-                        <div>
-                            <h3>Venture Cup Finals</h3>
-                            <p>Cohabit becomes a finalist in Venture Cup, Sweden's largest startup competition.</p>
-                        </div>
-                    </div>
-                </div>       
-            </div>
-            <div> 
-                <div class="timelineImageContainer">
-                    <div>                
-                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
-                    </div>
-                </div>
-                <div class="timelineInfoContainer">
-                    <div>
-                        <div>
-                            <p>August 2023</p>
-                        </div>
-                        <div>
-                            <h3>Lund Expansion</h3>
-                            <p>Cohabit expands its operation and delivers to customers in Lund.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>   
-                <div class="timelineImageContainer">
-                    <div>
-                        <img src="<?php echo get_theme_file_uri( 'assets/images/test/image3.jpg' ); ?>" alt="" class="testImage">
-                    </div>
-                </div>
-                <div class="timelineInfoContainer">
-                    <div>
-                        <div>
-                            <p>November 2023</p>
-                        </div>
-                        <div>
-                            <h3>Vinnova Fund</h3>
-                            <p>Cohabit receives the Innovative Impact Fund from Vinnova.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    <?php
+                }
+            }
+            ?>
         </div>
         <!-- Progress bar -->
         <div class="progressBarContainer">
@@ -186,21 +136,17 @@
 <!-- ////////////////////  Our Story Section About  //////////////////// -->
 <div class="ourStoryContainer" id="ourStory">
     <div>
-        <h2 class="ourStoryHeading">Our Story</h2>
+        <h2 class="ourStoryHeading"><?php echo get_theme_mod('cohabit-story-title'); ?></h2>
     </div>
     <div class="ourStoryWrapper">
         <div class="ourStoryImageContainer">
-            <img src="<?php echo get_theme_file_uri( 'assets/images/cohabitGroup.jpg' ); ?>" alt="">
+            <img src="<?php echo esc_url(get_theme_mod('cohabit-story-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-story-image')),'_wp_attachment_image_alt', true) ?>">
             <div class="textUnderImageContainer">
-                <p>Vaish, Jed and Max – Co-founders of Cohabit</p>
-                <p>Photo: Malin Palm</p>
+                <?php echo wpautop(get_theme_mod('cohabit-story-image-caption')); ?>
             </div>
         </div>
         <div class="ourStoryTextContainer">
-            <p>Cohabit is a circular furniture rental startup based in Malmö, Sweden.</p>
-            <p>As  former international students, we have experienced first-hand the  challenges students face when it comes to furnishing their empty  apartments – and yes, it’s quite stressful!</p>
-            <p>Launched  in 2022, Cohabit aims to make sustainable consumption convenient,  accessible, and affordable by providing pre-loved furniture for rent.  Initially intended as a project for our Social Entrepreneurship, Social Innovation, and Sustainability course,  we realized the potential for Cohabit, given the number of  international students who move to Sweden – and experience the same  problem – annually. </p>
-            <p>Today, our services are available in Malmö  and Lund, and aim to expand to other major student cities in the near  future, so join the movement and choose circularity with Cohabit! </p>
+            <?php echo wpautop(get_theme_mod('cohabit-story-content')); ?>
         </div>
     </div>
 </div>

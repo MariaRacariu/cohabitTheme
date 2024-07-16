@@ -6,6 +6,7 @@
        $args = array(
            'post_type' => 'footericon',
            'order' => 'ASC',
+           'posts_per_page' => 15,
        );
 
        $faq = new WP_Query($args);

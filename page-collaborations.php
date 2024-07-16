@@ -3,13 +3,13 @@
 <!-- ////////////////////  Intro Section Collaborations  //////////////////// -->
 <div class="introContainer">
     <div>
-        <h1 class="introHeading">Co-create with <span class="highlight">Cohabit</span> </h1>
+        <h1 class="introHeading"><?php echo get_theme_mod('cohabit-collaborations-intro-title'); ?></h1>
     </div>
     <div>
-        <p class="introText">Cohabit aims to work with housing companies to provide tenants with a sustainable living experience.</p>
+        <p class="introText"><?php echo get_theme_mod('cohabit-collaborations-intro-text'); ?></p>
     </div>
     <div class="introButtonContainer">
-        <a href="http://localhost/cohabit/contact/" class="introButton">Work with Cohabit</a>
+        <a href="<?php echo get_theme_mod('cohabit-collaborations-button-link'); ?>" class="introButton"><?php echo get_theme_mod('cohabit-collaborations-button-name'); ?></a>
     </div>
 </div>
 
@@ -18,24 +18,24 @@
     <div class="collaborationsSlider">
         <div>
             <div class="imageContainer">
-                <img src="<?php echo get_theme_file_uri( 'assets/images/collaborationsImages/usps1.png' ); ?>" alt="" class="sliderImage">
+                <img src="<?php echo esc_url(get_theme_mod('cohabit-usp-1-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-usp-1-image')),'_wp_attachment_image_alt', true) ?>" class="sliderImage">
             </div>
-            <h2>No Upfront Costs</h2>
-            <p>Cohabit handles delivery and maintenance of the furniture.</p>
+            <h2><?php echo get_theme_mod('cohabit-usp-1-title'); ?></h2>
+            <p><?php echo get_theme_mod('cohabit-usp-1-text'); ?></p>
         </div>
         <div>
             <div class="imageContainer">
-                <img src="<?php echo get_theme_file_uri( 'assets/images/collaborationsImages/usps2.png' ); ?>" alt="" class="sliderImage">
+                <img src="<?php echo esc_url(get_theme_mod('cohabit-usp-2-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-usp-2-image')),'_wp_attachment_image_alt', true) ?>" class="sliderImage">
             </div>
-            <h2>Integrate Sustainability</h2>
-            <p>Pre-loved furniture promotes green living and sustainable consumption.</p>
+            <h2><?php echo get_theme_mod('cohabit-usp-2-title'); ?></h2>
+            <p><?php echo get_theme_mod('cohabit-usp-2-text'); ?></p>
         </div>
         <div>
             <div class="imageContainer">
-                <img src="<?php echo get_theme_file_uri( 'assets/images/collaborationsImages/usps3.png' ); ?>" alt="" class="sliderImage">
+                <img src="<?php echo esc_url(get_theme_mod('cohabit-usp-3-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-usp-3-image')),'_wp_attachment_image_alt', true) ?>" class="sliderImage">
             </div>
-            <h2>Competitive Advantage</h2>
-            <p>A sustainably furnished apartment equals a happy tenant.</p>
+            <h2><?php echo get_theme_mod('cohabit-usp-3-title'); ?></h2>
+            <p><?php echo get_theme_mod('cohabit-usp-3-text'); ?></p>
         </div>
     </div>
 </div>
@@ -44,17 +44,17 @@
 <div class="quoteContainer">
     <div class="companyReviewContainer">
         <div>
-            <img src="<?php echo get_theme_file_uri( 'assets/images/collaborationsImages/heimstadenPeter.jpg' ); ?>" alt="" class="reviewImage">
+            <img src="<?php echo esc_url(get_theme_mod('cohabit-company-review-image')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-company-review-image')),'_wp_attachment_image_alt', true) ?>" class="reviewImage">
         </div>
         <div>
             <div class="companyQuoteContainer">
-                <p class="companyQuote">”Cohabit is ideal for our tenants looking for a sustainable, affordable, and convenient way to rent furniture during their stay in Malmö.”</p>
+                <p class="companyQuote"><?php echo get_theme_mod('cohabit-company-review-quote'); ?></p>
             </div>
            <div class="reviewInfoContainer">
-                <p>Peter Johannson - Facility Manager of Heimstaden Studenthus</p>
+                <p><?php echo get_theme_mod('cohabit-company-review-position'); ?></p>
            </div>
            <div class="companyLogoContainer">
-                <img src="<?php echo get_theme_file_uri( 'assets/images/logos/8.png' ); ?>" alt="">
+                <img src="<?php echo esc_url(get_theme_mod('cohabit-company-review-image-logo')); ?>" alt="<?php echo get_post_meta(attachment_url_to_postid(get_theme_mod('cohabit-company-review-image-logo')),'_wp_attachment_image_alt', true) ?>">
            </div>
         </div>
     </div>
@@ -64,7 +64,7 @@
 <div>
     <div class="newsContainer">
         <div>
-            <h2 class="newsSectionHeading">Cohabit in spotlight</h2>
+            <h2 class="newsSectionHeading"><?php echo get_theme_mod('cohabit-spotlight-title'); ?></h2>
         </div>
         <div class="cohabitNewsSlider">
         <?php
