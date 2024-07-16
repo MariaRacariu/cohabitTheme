@@ -80,7 +80,7 @@
 <div class="timelineSliderContainer">
     <div>
         <div class="timelineSliderHeading">
-            <h2>Cohabit's journey</h2>
+            <h2><?php echo get_theme_mod('cohabit-timeline-slider-title'); ?></h2>
         </div>
         <div class="your-class">
             <div>

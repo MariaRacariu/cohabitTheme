@@ -8,8 +8,10 @@ faqSectionButtons.forEach(faqSectionButton => {
 
         if (buttonChildDisplay === "none") {
             buttonChild.style.display = "block";
+            buttonChild.style.paddingBottom = "20px";
         } else {
             buttonChild.style.display = "none";
+            buttonChild.style.paddingBottom = "0px";
         }
 
 

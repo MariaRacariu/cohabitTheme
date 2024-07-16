@@ -21,11 +21,29 @@ Text Domain: cohabit
     font-family: 'Raleway', sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
 body {
     background-color: #F7F9F7;
     margin: 0px;
     padding: 0px;
     overflow: auto;
+    min-height: 100%;
+}
+
+/* Global Classes for text */
+.bold-text{
+    font-weight: 700;
+}
+
+.yellow-highlight {
+    color: #DFB447;
+}
+
+.teal-highlight {
+    color: #63C2C9;
 }
 
 /* Navigation */
@@ -92,7 +110,6 @@ body {
 
 /* Footer */
 .footerContainer {
-    bottom: 0;
     width: 100%;
 }
 
@@ -259,10 +276,12 @@ body {
     
     .footerNavigationItems{
         flex-direction: column-reverse;
+        padding-left: 0px;
     }
     
     .cohabitFooterNavContainer{
         flex-direction: column;
+        padding-left: 0px;
     }
     
     .cohabitFooterNavContainer > li {
@@ -274,7 +293,7 @@ body {
         align-items: center;
         justify-content: center;
         padding-right: 0px;
-        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
     
 }

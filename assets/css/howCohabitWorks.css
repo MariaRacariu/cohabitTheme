@@ -9,10 +9,6 @@
     font-weight: 800;
 }
 
-.tealHighlight {
-    color: #63C2C9;
-}
-
 .introImage {
     max-width: 800px;
     width: 100%;
@@ -85,12 +81,12 @@
     padding: 0px 20px 0px 20px;
 }
 
-h4 {
+.faqQAContainer > div > div > h4{
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
-.faqQAContainer>div>p {
+.faqQAContainer > div > div > p, .faqQAContainer > div > div > ul > li {
     line-height: 25px;
 }
 

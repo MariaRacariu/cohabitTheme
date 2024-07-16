@@ -1,21 +1,53 @@
+/* General */
 .mainContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactAndImageContainer{
     display: flex;
 }
 
-.contactFormContainer{
-    margin: auto;
-    width: 50%;
+.linksContainer{
+    margin-bottom: 100px;
     padding-left: 50px;
 }
 
+.secondFont{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+/* Heading */
 .introHeading{
     font-size: 30px;
+}
+
+/* Contact form */
+.contactFormContainer{
+    margin: auto;
+    width: 60%;
+    padding-left: 50px;
 }
 
 .messageInput, .contactFormContainer > p{
     width: 60% !important;
 }
 
+/* Image Container */
+.contactImage{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.contactImageContainer{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+/* Links */
 .formLinks{
     display: flex;
     align-items: center;
@@ -28,28 +60,19 @@
 .linkText:hover{
     text-decoration: underline;
 }
-.secondFont{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-}
-
-.contactImage{
-    max-width: 600px;
-    height: auto;
-}
-
-.contactImageContainer{
-    width: 800px;
-    display: flex;
-    align-items: center;
-}
 
 .phoneContactInfo{
     margin-top: 0px;
 }
 
-.linksContainer{
-    margin-bottom: 100px;
+@media only screen and (max-width: 1600px){
+    .contactFormContainer{
+        width: 70%;
+    }
+
+    .contactImageContainer{
+       padding-right: 30px;
+    }
 }
 
 @media only screen and (max-width: 1156px){
@@ -72,5 +95,14 @@
 @media only screen and (max-width: 600px) {
     .messageInput, .contactFormContainer > p{
         width: 100% !important;
+    }
+
+    .contactAndImageContainer{
+        margin: 0px 20px 0px 20px;
+    }
+
+    .linksContainer{
+        padding-left: 0px;
+        margin-left: 30px;
     }
 }

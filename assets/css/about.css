@@ -1,9 +1,12 @@
-.faqHeadingContainer {
+.faqSectionButton{
+    border: #1E1E1E 2px solid;
     border-radius: 40px;
+}
+
+.faqHeadingContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: #1E1E1E 2px solid;
 }
 
 .faqHeadingContainer {
@@ -192,17 +195,12 @@
     font-weight: 500;
 }
 
-@media only screen and (max-width: 1000px) {
-    .introWrapper {
-        flex-direction: column;
+@media only screen and (max-width: 1500px){
+    .ourStoryHeading{
+        text-align: center;
+        margin-left: 0px;
     }
-
-    .leftWrapper {
-        max-width: 100%;
-        padding-right: 0%;
-        margin-bottom: 30px;
-    }
-
+    
     .ourStoryWrapper{
         flex-direction: column;
         margin: 0px 20px 0px 20px;
@@ -213,6 +211,18 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .introWrapper {
+        flex-direction: column;
+    }
+
+    .leftWrapper {
+        max-width: 100%;
+        padding-right: 0%;
+        margin-bottom: 30px;
     }
 
     .ourStoryImageContainer > img{
@@ -229,9 +239,9 @@
         padding-left: 0px;
     }
 
-    .ourStoryHeading{
-        text-align: center;
-        margin-left: 0px;
+    .ourStoryTextContainer{
+        padding-right: 0px;
+        padding-left: 0px;
     }
 }
 

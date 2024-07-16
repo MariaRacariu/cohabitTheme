@@ -1528,7 +1528,22 @@ function cohabit_edit($wp_customize){
 		}
 	)));
 
-	// Here
+	// -------------- Timeline slider Section --------------
+	$wp_customize->add_section('cohabit-timeline-slider-section', array(
+		'title' => "Timeline Slider (Cohabit)",
+	));
+
+	// Title
+	$wp_customize->add_setting('cohabit-timeline-slider-title');
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-timeline-slider-title-control', array(
+		'label' => "Title",
+		'section' => "cohabit-timeline-slider-section",
+		'settings' => "cohabit-timeline-slider-title",
+		'active_callback' => function(){
+			return is_page('About');
+		}
+	)));
 
 	////////////////////  Footer  ////////////////////
 
