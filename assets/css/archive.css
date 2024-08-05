@@ -1,12 +1,22 @@
 .wrapper{
     min-height: 800px;
+    margin-top: 50px;
+}
+
+.paginationContainer{
+   height: 50px;
+   margin-top: 20px;
+   display: flex;
+   justify-content: flex-end;
+   padding-right: 20px;
 }
 
 .archiveContainer{
     display:flex ;
     flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 50px;
+    row-gap: 100px;
+    column-gap: 100px;
 }
 
 .imageContainer{

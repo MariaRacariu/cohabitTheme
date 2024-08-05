@@ -8,9 +8,20 @@ get_header(); ?>
     <div class="archiveContainer">
     <?php
 
-    if(have_posts()){
-        while(have_posts()){
-            the_post();
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+    $args = array(
+        'post_type' => 'customerexperiences',
+        'posts_per_page' => 8,
+        'order' => 'DEC',
+        'paged' => $paged,
+    );
+
+    $custom_archive = new WP_Query($args);
+
+    if( $custom_archive -> have_posts()){
+        while( $custom_archive -> have_posts()){
+            $custom_archive -> the_post();
                 ?>
                 <div class="userStoryContainer">
                     <div class="imageContainer">
@@ -26,8 +37,6 @@ get_header(); ?>
                             <a href="<?php the_permalink() ?>" class="readMoreButton">Read more</a>
                         </div>
                     </div>
-
-                    
                 </div>
         <?php
         }
@@ -36,6 +45,15 @@ get_header(); ?>
     }
     ?>
     </div>
+</div>
+<div class="paginationContainer">
+    <?php
+    the_posts_pagination(array(
+        'mid_size' => 2,
+        'prev_text' => __('« Previous', 'textdomain'),
+        'next_text' => __('Next »', 'textdomain'),
+    ));
+    ?>
 </div>
 
 <?php get_footer(); ?>
