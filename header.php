@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?php echo get_theme_file_uri( 'assets/images/favicon.png' ); ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php get_site_icon_url(); ?>" type="image/x-icon">
     <?php wp_head(); ?>
 </head>
 <body>
