@@ -33,6 +33,11 @@ body {
     min-height: 100%;
 }
 
+/* 404 Page */
+.notFoundContainer{
+    text-align: center;
+}
+
 /* Global Classes for text */
 .bold-text{
     font-weight: 700;
