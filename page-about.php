@@ -15,7 +15,7 @@
                 <div class="faqSectionButton">
                     <div class="faqHeadingContainer">
                         <h2><?php echo get_theme_mod('cohabit-intro-post-dropdownOne-title'); ?></h2>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-caret-down fa-2x"></i>
                     </div>
                     <div class="faqQAContainer">
                         <div>
@@ -26,7 +26,7 @@
                 <div class="faqSectionButton">
                     <div class="faqHeadingContainer">
                         <h2><?php echo get_theme_mod('cohabit-intro-post-dropdownTwo-title'); ?></h2>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-caret-down fa-2x"></i>
                     </div>
                     <div class="faqQAContainer">
                         <div>
