@@ -105,8 +105,7 @@ add_action('after_setup_theme', 'cohabit_theme_support');
 function menus(){
     register_nav_menus (array(
         'primary menu' => 'Desktop Primary Menu',
-        'footer menu one' => 'Footer Navigation One',
-		'footer menu two' => 'Footer Navigation Two'
+        'footer menu one' => 'Footer Navigation',
     ));
 } 
 add_action('after_setup_theme', 'menus');
