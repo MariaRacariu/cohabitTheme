@@ -121,6 +121,8 @@
                         </div>
                     <?php
                 }
+            }else{
+                echo "<p>No posts found</p>";
             }
             ?>
         </div>

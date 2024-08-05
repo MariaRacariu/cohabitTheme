@@ -91,6 +91,8 @@
                
                 <?php
             }
+        }else{
+            echo "No posts found";
         }
 
        
