@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Custom Template for How Cohabit Works
+Template Name: Contact
 */
 
 get_header(); 

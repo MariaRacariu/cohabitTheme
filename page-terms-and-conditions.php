@@ -1,4 +1,9 @@
-<?php get_header();?>
+<?php
+/*
+Template Name: Terms and conditions
+*/ 
+get_header();
+?>
 
 <div class="tcMainContent">
     <div>

@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: How Cohabit Works
+*/
+
+get_header(); 
+?>
 
 <!-- ////////////////////  Hero Section How cohabit works  //////////////////// -->
 <div class="introContainer">

@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Collaborations
+*/
+get_header();
+?>
 
 <!-- ////////////////////  Intro Section Collaborations  //////////////////// -->
 <div class="introContainer">
