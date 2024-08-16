@@ -104,6 +104,11 @@
     align-items: center;
 }
 
+.movingInfoImageContainer > img{
+    max-width: 600px;
+    height: auto;
+}
+
 .slide > p{
     padding: 0px 20px 0px 20px;
 }
