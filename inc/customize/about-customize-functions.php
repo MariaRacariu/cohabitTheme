@@ -59,10 +59,10 @@ function cohabit_about_customize($wp_customize){
     $wp_customize->add_setting('cohabit-intro-post-button-link');
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'cohabit-intro-post-button-link-control', array(
-        'label' => "Button title",
-        'section' => "cohabit-intro-post-button-section",
-        'settings' => "cohabit-intro-post-button-link",
-        'type' => 'textarea',
+        'label'     => "Button Link",
+        'section'   => "cohabit-intro-post-button-section",
+        'settings'  => "cohabit-intro-post-button-link",
+        'type'      => 'textarea',
         'active_callback' => function(){
             return is_page('About');
         }
